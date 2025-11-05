@@ -5,6 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { ArchiveCard } from "@/components/ArchiveCard";
 import { archiveItems } from "@/data/archiveData";
 import { Timeline } from "@/components/Timeline";
+import { OrdoHeader } from "@/components/OrdoHeader";
+import { ClassifiedBanner } from "@/components/ClassifiedBanner";
+import { GlitchText } from "@/components/GlitchText";
+import { NavigationMenu } from "@/components/NavigationMenu";
 
 const Index = () => {
   const sectionsRef = useRef<HTMLDivElement[]>([]);
@@ -32,9 +36,12 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground scanline">
+      <OrdoHeader />
+      <NavigationMenu />
+      
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden mt-20">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -46,30 +53,39 @@ const Index = () => {
           ref={(el) => el && (sectionsRef.current[0] = el)}
           className="relative z-10 text-center px-4 opacity-0 transition-all duration-1000"
         >
-          <Badge className="mb-6 bg-primary/20 text-primary border-primary hover:bg-primary/30 text-lg px-6 py-2">
-            Uma Historia Original
+          <Badge className="mb-6 bg-primary/20 text-primary border-primary hover:bg-primary/30 text-lg px-6 py-2 font-courier">
+            ARQUIVO CONFIDENCIAL
           </Badge>
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight">
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-              Ordem Paranormal
-            </span>
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 tracking-tight font-mono-tech">
+            <GlitchText 
+              text="ORDEM PARANORMAL"
+              className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent"
+            />
           </h1>
-          <h2 className="text-3xl md:text-5xl font-semibold text-accent mb-6">
+          <h2 className="text-3xl md:text-5xl font-semibold text-accent mb-6 font-typewriter">
             Os Filhos da Maldição
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-courier">
             Dois anos após o pesadelo, a anomalia retorna. A convocação foi feita.
           </p>
+          <div className="mt-8 text-sm text-primary/70 font-terminal">
+            &gt; ACESSO CONCEDIDO | SISTEMA OPERACIONAL
+          </div>
         </div>
       </section>
 
+      <ClassifiedBanner />
+
       {/* Synopsis Section */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="synopsis" className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
         <div 
           ref={(el) => el && (sectionsRef.current[1] = el)}
           className="opacity-0 transition-all duration-1000"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <div className="mb-6 text-center">
+            <span className="text-primary font-terminal text-sm">&gt; DECODIFICANDO ARQUIVO...</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center font-courier">
             O Pesadelo de <span className="text-primary">Dois Anos Atrás</span>
           </h2>
           
@@ -97,7 +113,10 @@ const Index = () => {
           ref={(el) => el && (sectionsRef.current[2] = el)}
           className="opacity-0 transition-all duration-1000"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <div className="mb-6 text-center">
+            <span className="text-accent font-terminal text-sm animate-pulse">&gt; ALERTA: NOVA AMEAÇA DETECTADA</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center font-courier">
             A <span className="text-accent">Convocação</span>
           </h2>
           
@@ -120,15 +139,18 @@ const Index = () => {
       </section>
 
       {/* Agents Section */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="agents" className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
         <div 
           ref={(el) => el && (sectionsRef.current[3] = el)}
           className="opacity-0 transition-all duration-1000"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+          <div className="mb-6 text-center">
+            <span className="text-primary font-terminal text-sm">&gt; ACESSANDO DOSSIÊS DE AGENTES...</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center font-courier">
             Os <span className="text-primary">Agentes</span>
           </h2>
-          <p className="text-xl text-muted-foreground text-center mb-12">
+          <p className="text-xl text-muted-foreground text-center mb-12 font-courier">
             Conheça os sobreviventes e os novos recrutas da Ordo
           </p>
           
@@ -200,19 +222,22 @@ const Index = () => {
       </section>
 
       {/* Archive Section */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto bg-gradient-to-b from-background via-card/30 to-background">
+      <section id="archive" className="py-24 px-4 md:px-8 max-w-7xl mx-auto bg-gradient-to-b from-background via-card/30 to-background">
         <div 
           ref={(el) => el && (sectionsRef.current[4] = el)}
           className="opacity-0 transition-all duration-1000"
         >
           <div className="text-center mb-12">
-            <Badge className="mb-6 bg-destructive/20 text-destructive border-destructive hover:bg-destructive/30 text-lg px-6 py-2">
+            <div className="mb-4">
+              <span className="text-destructive font-terminal text-sm animate-pulse">&gt; REQUER AUTORIZAÇÃO NÍVEL ALFA</span>
+            </div>
+            <Badge className="mb-6 bg-destructive/20 text-destructive border-destructive hover:bg-destructive/30 text-lg px-6 py-2 font-courier">
               ACESSO RESTRITO
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-courier">
               Arquivo da <span className="text-primary">Ordo</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-courier">
               Dossiês, símbolos, criaturas e artefatos catalogados. Investigue os mistérios que aguardam nas sombras.
             </p>
           </div>
@@ -225,15 +250,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Timeline Section */}
+      <Timeline />
+
+      <ClassifiedBanner
+        level="FIM DE TRANSMISSÃO" 
+        message="Mantenha-se vigilante. Eles estão observando."
+      />
+
       {/* Footer */}
-      <footer className="py-12 px-4 border-t border-border">
+      <footer className="py-12 px-4 border-t-2 border-primary/30 bg-card/30">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-muted-foreground">
-            Uma campanha de <span className="text-primary font-semibold">Ordem Paranormal</span> por Lil
+          <p className="text-muted-foreground font-courier mb-2">
+            <span className="text-primary font-terminal">&gt;</span> Uma campanha de <span className="text-primary font-semibold">Ordem Paranormal</span>
           </p>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-sm text-muted-foreground font-terminal">
             A anomalia aguarda. Vocês estão prontos?
           </p>
+          <div className="mt-4 text-xs text-primary/50 font-terminal">
+            ORDO_REALITAS_v2.7.3 | SISTEMA OPERACIONAL | ACESSO: AUTORIZADO
+          </div>
         </div>
       </footer>
     </main>

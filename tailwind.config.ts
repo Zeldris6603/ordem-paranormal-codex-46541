@@ -13,6 +13,12 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'terminal': ['VT323', 'monospace'],
+        'typewriter': ['Special Elite', 'cursive'],
+        'mono-tech': ['Share Tech Mono', 'monospace'],
+        'courier': ['Courier Prime', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

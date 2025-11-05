@@ -8,7 +8,7 @@ export const archiveItems = [
     preview: "Única sobrevivente lúcida do Incidente Deus da Morte. Carreg a culpa de três mortes. Possível portadora da Maldição Flamarion.",
     content: `
       <p><strong>NOME:</strong> Marine Flamarion</p>
-      <p><strong>IDADE:</strong> 34 anos</p>
+      <p><strong>IDADE:</strong> 30-31 anos</p>
       <p><strong>CAMINHO:</strong> Energia</p>
       <p><strong>STATUS:</strong> Ativa (reintegrada após 2 anos de afastamento)</p>
       
@@ -38,8 +38,8 @@ export const archiveItems = [
     preview: "Envelheceu 10 anos em segundos. Corpo marcado pelo toque do tempo. Fobia de contato físico desenvolvida após o incidente.",
     content: `
       <p><strong>NOME:</strong> Santer</p>
-      <p><strong>IDADE CRONOLÓGICA:</strong> 38 anos</p>
-      <p><strong>IDADE BIOLÓGICA:</strong> 48 anos</p>
+      <p><strong>IDADE CRONOLÓGICA:</strong> 30 anos</p>
+      <p><strong>IDADE BIOLÓGICA:</strong> 40 anos</p>
       <p><strong>CAMINHO:</strong> Conhecimento</p>
       <p><strong>STATUS:</strong> Ativo (reintegrado com restrições médicas)</p>
       
