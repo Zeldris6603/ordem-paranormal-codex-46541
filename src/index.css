@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 70% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 270 40% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 80% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 0 70% 45%;
+
+    --radius: 0.5rem;
+
+    /* Paranormal theme specific */
+    --blood-red: 0 85% 35%;
+    --paranormal-purple: 270 50% 35%;
+    --dark-shadow: 220 25% 5%;
+    --glow-red: 0 100% 50%;
+    
+    /* Gradients */
+    --gradient-horror: linear-gradient(135deg, hsl(0 70% 25%), hsl(270 40% 20%));
+    --gradient-blood: linear-gradient(180deg, hsl(0 85% 35%), hsl(0 70% 20%));
+    
+    /* Shadows */
+    --shadow-horror: 0 10px 40px -10px hsl(0 85% 35% / 0.4);
+    --shadow-glow: 0 0 30px hsl(0 100% 50% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.shadow-horror {
+  box-shadow: var(--shadow-horror);
+}
