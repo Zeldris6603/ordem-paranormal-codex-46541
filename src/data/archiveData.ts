@@ -40,7 +40,7 @@ export const archiveItems = [
       <p><strong>NOME:</strong> Santer</p>
       <p><strong>IDADE CRONOLÓGICA:</strong> 30 anos</p>
       <p><strong>IDADE BIOLÓGICA:</strong> 40 anos</p>
-      <p><strong>CAMINHO:</strong> Conhecimento</p>
+      <p><strong>CAMINHO:</strong> Sangue / Morte </p>
       <p><strong>STATUS:</strong> Ativo (reintegrado com restrições médicas)</p>
       
       <p><strong>PERFIL PSICOLÓGICO:</strong></p>

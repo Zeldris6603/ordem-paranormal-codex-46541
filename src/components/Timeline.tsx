@@ -65,7 +65,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     year: "PRESENTE",
     title: "Mobilização da Ordo",
-    description: "Nova equipe formada: Marine, Santer, Atlas, Nightingale e Cipher. Missão: Impedir o ritual e confrontar a verdade sobre a Maldição Flamarion.",
+    description: "Nova equipe formada: Marine, Santer, ???, ???, ??? Missão: Impedir o ritual e confrontar a verdade sobre a Maldição Flamarion.",
     classification: "EM ANDAMENTO"
   }
 ];
