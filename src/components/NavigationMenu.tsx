@@ -20,6 +20,7 @@ export const NavigationMenu = () => {
     { id: "synopsis", label: "Sinopse", icon: FileText },
     { id: "agents", label: "Agentes", icon: Skull },
     { id: "archive", label: "Arquivo", icon: Box },
+    { id: "classified-files", label: "Base de Dados", icon: Eye },
     { id: "timeline", label: "Linha do Tempo", icon: Clock },
   ];
 

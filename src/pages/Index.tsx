@@ -13,6 +13,7 @@ import { ClassifiedBanner } from "@/components/ClassifiedBanner";
 import { GlitchText } from "@/components/GlitchText";
 import { DecodingLoader } from "@/components/DecodingLoader";
 import { NavigationMenu } from "@/components/NavigationMenu";
+import { ClassifiedFilesSection } from "@/components/ClassifiedFilesSection";
 import { LogOut } from "lucide-react";
 
 const Index = () => {
@@ -350,6 +351,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Classified Files Database Section */}
+      <ClassifiedFilesSection />
 
       {/* Timeline Section */}
       <Timeline />
