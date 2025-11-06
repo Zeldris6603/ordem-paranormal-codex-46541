@@ -14,7 +14,152 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      activity_logs: {
+        Row: {
+          action: string
+          agent_id: string | null
+          details: string | null
+          id: string
+          timestamp: string | null
+        }
+        Insert: {
+          action: string
+          agent_id?: string | null
+          details?: string | null
+          id?: string
+          timestamp?: string | null
+        }
+        Update: {
+          action?: string
+          agent_id?: string | null
+          details?: string | null
+          id?: string
+          timestamp?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "activity_logs_agent_id_fkey"
+            columns: ["agent_id"]
+            isOneToOne: false
+            referencedRelation: "agents"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      agent_access: {
+        Row: {
+          agent_id: string | null
+          file_id: string | null
+          granted_at: string | null
+          id: string
+        }
+        Insert: {
+          agent_id?: string | null
+          file_id?: string | null
+          granted_at?: string | null
+          id?: string
+        }
+        Update: {
+          agent_id?: string | null
+          file_id?: string | null
+          granted_at?: string | null
+          id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "agent_access_agent_id_fkey"
+            columns: ["agent_id"]
+            isOneToOne: false
+            referencedRelation: "agents"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "agent_access_file_id_fkey"
+            columns: ["file_id"]
+            isOneToOne: false
+            referencedRelation: "files"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      agents: {
+        Row: {
+          access_level: number
+          biography: string | null
+          class: string
+          code_name: string
+          created_at: string | null
+          id: string
+          origin: string
+          real_name: string
+          strengths: string | null
+          theme_color: string
+          user_id: string | null
+          weaknesses: string | null
+        }
+        Insert: {
+          access_level?: number
+          biography?: string | null
+          class: string
+          code_name: string
+          created_at?: string | null
+          id?: string
+          origin: string
+          real_name: string
+          strengths?: string | null
+          theme_color: string
+          user_id?: string | null
+          weaknesses?: string | null
+        }
+        Update: {
+          access_level?: number
+          biography?: string | null
+          class?: string
+          code_name?: string
+          created_at?: string | null
+          id?: string
+          origin?: string
+          real_name?: string
+          strengths?: string | null
+          theme_color?: string
+          user_id?: string | null
+          weaknesses?: string | null
+        }
+        Relationships: []
+      }
+      files: {
+        Row: {
+          category: string
+          classification: string
+          content: string
+          created_at: string | null
+          id: string
+          required_access_level: number
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          category: string
+          classification: string
+          content: string
+          created_at?: string | null
+          id?: string
+          required_access_level?: number
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          category?: string
+          classification?: string
+          content?: string
+          created_at?: string | null
+          id?: string
+          required_access_level?: number
+          title?: string
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
