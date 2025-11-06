@@ -1,17 +1,36 @@
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAgent } from "@/contexts/AgentContext";
 import heroImage from "@/assets/hero-paranormal.jpg";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArchiveCard } from "@/components/ArchiveCard";
 import { archiveItems } from "@/data/archiveData";
 import { Timeline } from "@/components/Timeline";
 import { OrdoHeader } from "@/components/OrdoHeader";
 import { ClassifiedBanner } from "@/components/ClassifiedBanner";
 import { GlitchText } from "@/components/GlitchText";
+import { DecodingLoader } from "@/components/DecodingLoader";
 import { NavigationMenu } from "@/components/NavigationMenu";
+import { LogOut } from "lucide-react";
 
 const Index = () => {
+  const navigate = useNavigate();
+  const { agent, loading, signOut, logActivity } = useAgent();
   const sectionsRef = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    if (!loading && !agent) {
+      navigate("/auth");
+    }
+  }, [agent, loading, navigate]);
+
+  useEffect(() => {
+    if (agent) {
+      logActivity("PAGE_VIEW", "Accessed main dashboard");
+    }
+  }, [agent]);
 
   useEffect(() => {
     const observers = sectionsRef.current.map((section, index) => {
@@ -35,10 +54,71 @@ const Index = () => {
     };
   }, []);
 
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <DecodingLoader text="CARREGANDO PERFIL DO AGENTE" />
+      </div>
+    );
+  }
+
+  if (!agent) {
+    return null;
+  }
+
+  const handleLogout = async () => {
+    await logActivity("LOGOUT", "Agent logged out");
+    await signOut();
+    navigate("/auth");
+  };
+
+  // Theme color mapping
+  const themeColors: Record<string, string> = {
+    wine: "from-rose-950 to-background",
+    slate: "from-slate-800 to-background",
+    emerald: "from-emerald-900 to-background",
+    amber: "from-amber-900 to-background",
+  };
+
+  const accentColors: Record<string, string> = {
+    wine: "border-rose-500/30",
+    slate: "border-slate-500/30",
+    emerald: "border-emerald-500/30",
+    amber: "border-amber-500/30",
+  };
+
+  const gradientClass = themeColors[agent.theme_color] || themeColors.wine;
+  const accentClass = accentColors[agent.theme_color] || accentColors.wine;
+
   return (
-    <main className="min-h-screen bg-background text-foreground scanline">
+    <main className={`min-h-screen bg-gradient-to-b ${gradientClass} text-foreground scanline`}>
       <OrdoHeader />
       <NavigationMenu />
+      
+      {/* Agent Status Bar */}
+      <div className={`fixed top-20 right-4 z-40 bg-card/90 backdrop-blur border ${accentClass} p-4 rounded font-terminal text-sm max-w-xs`}>
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-primary">&gt; AGENTE ATIVO:</span>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleLogout}
+            className="h-6 px-2"
+          >
+            <LogOut className="w-3 h-3" />
+          </Button>
+        </div>
+        <p className="text-foreground font-bold">{agent.code_name}</p>
+        <p className="text-muted-foreground text-xs">{agent.real_name}</p>
+        <p className="text-muted-foreground text-xs mt-1">
+          Classe: {agent.class} | Origem: {agent.origin}
+        </p>
+        <div className="mt-2 pt-2 border-t border-primary/30">
+          <p className="text-xs text-accent">
+            Nível de Acesso: <span className="font-bold">{agent.access_level}</span>
+          </p>
+        </div>
+      </div>
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden mt-20">
@@ -197,25 +277,46 @@ const Index = () => {
               </div>
             </Card>
 
-            {/* Placeholder for new agents */}
-            <Card className="bg-card/50 border-border border-dashed p-8 hover:shadow-horror transition-all duration-500">
+            {/* Mikael Trovi */}
+            <Card className="bg-card border-border p-8 hover:shadow-horror transition-all duration-500 hover:scale-105">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-2xl font-bold text-secondary">Novo Agente</h3>
-                <Badge className="bg-secondary/20 text-secondary border-secondary">Recruta</Badge>
+                <h3 className="text-2xl font-bold text-primary">Mikael Trovi</h3>
+                <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500">Ocultista</Badge>
               </div>
-              <p className="text-muted-foreground mb-4 italic">
-                Os novos membros da equipe ainda serão revelados...
+              <p className="text-muted-foreground mb-4">
+                Jovem ocultista de mechas rosadas. Perdeu a família para o Coletivo das Sombras. Especialista em runas e simbologia.
               </p>
+              <div className="space-y-2">
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fortes:</span>
+                  <p className="text-sm text-muted-foreground">Conhecimento ritualístico, improviso, coragem</p>
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fracos:</span>
+                  <p className="text-sm text-muted-foreground">Impulsividade, insubordinação, sede de vingança</p>
+                </div>
+              </div>
             </Card>
 
-            <Card className="bg-card/50 border-border border-dashed p-8 hover:shadow-horror transition-all duration-500">
+            {/* Noah */}
+            <Card className="bg-card border-border p-8 hover:shadow-horror transition-all duration-500 hover:scale-105">
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-2xl font-bold text-secondary">Novo Agente</h3>
-                <Badge className="bg-secondary/20 text-secondary border-secondary">Recruta</Badge>
+                <h3 className="text-2xl font-bold text-primary">Noah</h3>
+                <Badge className="bg-amber-500/20 text-amber-400 border-amber-500">Especialista</Badge>
               </div>
-              <p className="text-muted-foreground mb-4 italic">
-                Os novos membros da equipe ainda serão revelados...
+              <p className="text-muted-foreground mb-4">
+                Ex-mercenário salvo pela Ordo após contato com Lodo Vivo. Agora serve como analista tático da equipe.
               </p>
+              <div className="space-y-2">
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fortes:</span>
+                  <p className="text-sm text-muted-foreground">Precisão, análise tática, frieza sob pressão</p>
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fracos:</span>
+                  <p className="text-sm text-muted-foreground">Desconfiança, isolamento emocional</p>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
