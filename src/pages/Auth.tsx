@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAgent } from "@/contexts/AgentContext";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { GlitchText } from "@/components/GlitchText";
 import { Lock, UserPlus } from "lucide-react";
 import { z } from "zod";
+import { useToast } from "@/hooks/use-toast";
 
 const authSchema = z.object({
   email: z.string().email({ message: "Email inválido" }),
@@ -21,17 +22,27 @@ const signUpSchema = authSchema.extend({
 
 export default function Auth() {
   const navigate = useNavigate();
-  const { signIn, signUp, user } = useAgent();
-  const [loading, setLoading] = useState(false);
+  const { signIn, signUp, user, agent, signOut, loading: authLoading } = useAgent();
+  const { toast } = useToast();
+  const [formLoading, setFormLoading] = useState(false);
   
   const [loginData, setLoginData] = useState({ email: "", password: "" });
   const [signUpData, setSignUpData] = useState({ email: "", password: "", agentCode: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  if (user) {
-    navigate("/");
-    return null;
-  }
+  // Navigate to main page when user is present. Do this in an effect
+  // to avoid updating Router state during render (React warning).
+  // Only navigate to main page when we have a linked agent.
+  // If a user exists but `agent` is null, we must stay on the auth page
+  // (this can happen when the user exists but hasn't been linked to an agent yet).
+  useEffect(() => {
+    if (user && agent) {
+      navigate("/");
+    }
+  }, [user, agent, navigate]);
+
+  // If the user is authenticated but not linked to an agent, show a helpful
+  // message so they know why navigation didn't occur.
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,9 +58,12 @@ export default function Auth() {
       return;
     }
 
-    setLoading(true);
-    await signIn(loginData.email, loginData.password);
-    setLoading(false);
+  console.log("Auth: handleLogin called", loginData);
+  toast({ title: "Autenticando..." });
+  setFormLoading(true);
+  const res = await signIn(loginData.email, loginData.password);
+  console.log("Auth: signIn result", res);
+  setFormLoading(false);
   };
 
   const handleSignUp = async (e: React.FormEvent) => {
@@ -66,13 +80,16 @@ export default function Auth() {
       return;
     }
 
-    setLoading(true);
-    const { error } = await signUp(signUpData.email, signUpData.password, signUpData.agentCode);
-    setLoading(false);
+  console.log("Auth: handleSignUp called", signUpData);
+  toast({ title: "Registrando..." });
+  setFormLoading(true);
+  const { error } = await signUp(signUpData.email, signUpData.password, signUpData.agentCode);
+  console.log("Auth: signUp result", { error });
+  setFormLoading(false);
     
-    if (!error) {
-      navigate("/");
-    }
+    // Do not navigate immediately after signUp; wait for the
+    // auth/agent listener to set `agent` and let the effect above
+    // handle routing to the main page when appropriate.
   };
 
   return (
@@ -92,6 +109,15 @@ export default function Auth() {
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="login" className="w-full">
+            {user && !agent && !authLoading && (
+              <div className="mb-4 p-4 bg-destructive/5 border border-destructive/20 rounded">
+                <p className="text-sm font-terminal text-destructive mb-2">Conta autenticada, mas sem vínculo de agente.</p>
+                <p className="text-xs text-muted-foreground mb-3">Se você já se registrou, espere alguns segundos para vinculação automática ou contate um administrador para vincular sua conta ao agente correto.</p>
+                <div className="flex gap-2">
+                  <Button variant="outline" onClick={() => signOut()} className="font-terminal">SAIR</Button>
+                </div>
+              </div>
+            )}
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="login" className="font-terminal">
                 <Lock className="w-4 h-4 mr-2" />
@@ -116,7 +142,7 @@ export default function Auth() {
                     value={loginData.email}
                     onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
                     className="font-mono-tech bg-background/50"
-                    disabled={loading}
+                    disabled={formLoading}
                   />
                   {errors.email && (
                     <p className="text-xs text-destructive font-terminal">{errors.email}</p>
@@ -134,7 +160,7 @@ export default function Auth() {
                     value={loginData.password}
                     onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
                     className="font-mono-tech bg-background/50"
-                    disabled={loading}
+                    disabled={formLoading}
                   />
                   {errors.password && (
                     <p className="text-xs text-destructive font-terminal">{errors.password}</p>
@@ -144,9 +170,9 @@ export default function Auth() {
                 <Button
                   type="submit"
                   className="w-full font-terminal"
-                  disabled={loading}
+                  disabled={formLoading}
                 >
-                  {loading ? "AUTENTICANDO..." : "ACESSAR SISTEMA"}
+                  {formLoading ? "AUTENTICANDO..." : "ACESSAR SISTEMA"}
                 </Button>
               </form>
             </TabsContent>
@@ -164,7 +190,7 @@ export default function Auth() {
                     value={signUpData.agentCode}
                     onChange={(e) => setSignUpData({ ...signUpData, agentCode: e.target.value.toUpperCase() })}
                     className="font-mono-tech bg-background/50 uppercase"
-                    disabled={loading}
+                    disabled={formLoading}
                   />
                   {errors.agentCode && (
                     <p className="text-xs text-destructive font-terminal">{errors.agentCode}</p>
@@ -185,7 +211,7 @@ export default function Auth() {
                     value={signUpData.email}
                     onChange={(e) => setSignUpData({ ...signUpData, email: e.target.value })}
                     className="font-mono-tech bg-background/50"
-                    disabled={loading}
+                    disabled={formLoading}
                   />
                   {errors.email && (
                     <p className="text-xs text-destructive font-terminal">{errors.email}</p>
@@ -203,7 +229,7 @@ export default function Auth() {
                     value={signUpData.password}
                     onChange={(e) => setSignUpData({ ...signUpData, password: e.target.value })}
                     className="font-mono-tech bg-background/50"
-                    disabled={loading}
+                    disabled={formLoading}
                   />
                   {errors.password && (
                     <p className="text-xs text-destructive font-terminal">{errors.password}</p>
@@ -213,9 +239,9 @@ export default function Auth() {
                 <Button
                   type="submit"
                   className="w-full font-terminal"
-                  disabled={loading}
+                  disabled={formLoading}
                 >
-                  {loading ? "REGISTRANDO..." : "REGISTRAR ACESSO"}
+                  {formLoading ? "REGISTRANDO..." : "REGISTRAR ACESSO"}
                 </Button>
               </form>
             </TabsContent>

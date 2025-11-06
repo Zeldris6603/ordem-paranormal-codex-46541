@@ -40,6 +40,7 @@ export const AgentProvider = ({ children }: { children: ReactNode }) => {
     // Set up auth state listener
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       async (event, session) => {
+        console.log("AgentContext: onAuthStateChange", { event, session });
         setSession(session);
         setUser(session?.user ?? null);
         
@@ -50,11 +51,12 @@ export const AgentProvider = ({ children }: { children: ReactNode }) => {
               .from("agents")
               .select("*")
               .eq("user_id", session.user.id)
-              .single();
+              .maybeSingle();
             
             if (error) {
               console.error("Error fetching agent:", error);
             } else {
+              console.log("AgentContext: fetched agent for user", { userId: session.user.id, agentData });
               setAgent(agentData);
             }
             setLoading(false);
@@ -68,6 +70,7 @@ export const AgentProvider = ({ children }: { children: ReactNode }) => {
 
     // Check for existing session
     supabase.auth.getSession().then(({ data: { session } }) => {
+      console.log("AgentContext: getSession result", { session });
       setSession(session);
       setUser(session?.user ?? null);
       
@@ -77,11 +80,12 @@ export const AgentProvider = ({ children }: { children: ReactNode }) => {
             .from("agents")
             .select("*")
             .eq("user_id", session.user.id)
-            .single();
+            .maybeSingle();
           
           if (error) {
             console.error("Error fetching agent:", error);
           } else {
+            console.log("AgentContext: fetched agent on init", { userId: session.user.id, agentData });
             setAgent(agentData);
           }
           setLoading(false);
