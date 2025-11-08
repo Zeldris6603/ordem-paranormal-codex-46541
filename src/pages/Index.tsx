@@ -79,6 +79,7 @@ const Index = () => {
     slate: "from-slate-800 to-background",
     emerald: "from-emerald-900 to-background",
     amber: "from-amber-900 to-background",
+    blue: "from-blue-900 to-background",
   };
 
   const accentColors: Record<string, string> = {
@@ -86,6 +87,7 @@ const Index = () => {
     slate: "border-slate-500/30",
     emerald: "border-emerald-500/30",
     amber: "border-amber-500/30",
+    blue: "border-blue-500/30",
   };
 
   const gradientClass = themeColors[agent.theme_color] || themeColors.wine;
@@ -235,7 +237,7 @@ const Index = () => {
             Conheça os sobreviventes e os novos recrutas da Ordo
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Marine Flamarion */}
             <Card className="bg-card border-border p-8 hover:shadow-horror transition-all duration-500 hover:scale-105">
               <div className="flex items-start justify-between mb-4">
@@ -316,6 +318,27 @@ const Index = () => {
                 <div>
                   <span className="text-sm font-semibold text-foreground">Pontos Fracos:</span>
                   <p className="text-sm text-muted-foreground">Desconfiança, isolamento emocional</p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Kornell Kalashnikov */}
+            <Card className="bg-card border-border p-8 hover:shadow-horror transition-all duration-500 hover:scale-105">
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-2xl font-bold text-primary">Kornell Kalashnikov</h3>
+                <Badge className="bg-blue-500/20 text-blue-400 border-blue-500">Combatente</Badge>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Ex-trapaceiro que enganou a pessoa errada. Agora serve à Ordem, usando sua lábia e reflexos para o bem.
+              </p>
+              <div className="space-y-2">
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fortes:</span>
+                  <p className="text-sm text-muted-foreground">Combate corpo a corpo, lábia excepcional, reflexos rápidos</p>
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-foreground">Pontos Fracos:</span>
+                  <p className="text-sm text-muted-foreground">Passado criminal, dificuldade em confiar, tendência a trapacear</p>
                 </div>
               </div>
             </Card>

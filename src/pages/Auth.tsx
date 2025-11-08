@@ -186,7 +186,7 @@ export default function Auth() {
                   <Input
                     id="signup-code"
                     type="text"
-                    placeholder="MARINE, SANTER, MIKAEL, NOAH"
+                    placeholder="MARINE, SANTER, MIKAEL, NOAH, KORNELL"
                     value={signUpData.agentCode}
                     onChange={(e) => setSignUpData({ ...signUpData, agentCode: e.target.value.toUpperCase() })}
                     className="font-mono-tech bg-background/50 uppercase"
