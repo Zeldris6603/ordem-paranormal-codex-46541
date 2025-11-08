@@ -14,12 +14,23 @@ import { GlitchText } from "@/components/GlitchText";
 import { DecodingLoader } from "@/components/DecodingLoader";
 import { NavigationMenu } from "@/components/NavigationMenu";
 import { ClassifiedFilesSection } from "@/components/ClassifiedFilesSection";
+import { KonamiCode } from "@/components/KonamiCode";
+import { SecretsDiscovered } from "@/components/SecretsDiscovered";
 import { LogOut } from "lucide-react";
+import { useState } from "react";
+import { useEasterEggs } from "@/hooks/useEasterEggs";
+import { EasterEggDialog } from "@/components/EasterEggDialog";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const navigate = useNavigate();
   const { agent, loading, signOut, logActivity } = useAgent();
   const sectionsRef = useRef<HTMLDivElement[]>([]);
+  const { discoverEgg } = useEasterEggs();
+  const { toast } = useToast();
+  const [logoClicks, setLogoClicks] = useState(0);
+  const [showEggDialog, setShowEggDialog] = useState(false);
+  const [currentEgg, setCurrentEgg] = useState<any>(null);
 
   useEffect(() => {
     if (!loading && !agent) {
@@ -73,6 +84,28 @@ const Index = () => {
     navigate("/auth");
   };
 
+  const handleLogoClick = async () => {
+    const newCount = logoClicks + 1;
+    setLogoClicks(newCount);
+
+    if (newCount === 3) {
+      const egg = await discoverEgg("triple_click_logo");
+      if (egg) {
+        setCurrentEgg(egg);
+        setShowEggDialog(true);
+        toast({
+          title: "👁 O TERCEIRO OLHO SE ABRE",
+          description: "Você vê o que está oculto...",
+        });
+      }
+      setLogoClicks(0);
+    }
+
+    setTimeout(() => {
+      setLogoClicks(0);
+    }, 2000);
+  };
+
   // Theme color mapping
   const themeColors: Record<string, string> = {
     wine: "from-rose-950 to-background",
@@ -95,7 +128,8 @@ const Index = () => {
 
   return (
     <main className={`min-h-screen bg-gradient-to-b ${gradientClass} text-foreground scanline`}>
-      <OrdoHeader />
+      <KonamiCode />
+      <OrdoHeader onLogoClick={handleLogoClick} />
       <NavigationMenu />
       
       {/* Agent Status Bar */}
@@ -378,8 +412,42 @@ const Index = () => {
       {/* Classified Files Database Section */}
       <ClassifiedFilesSection />
 
+      {/* Secrets Discovered Section */}
+      <section id="secrets" className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <div className="mb-4">
+            <span className="text-accent font-terminal text-sm animate-pulse">
+              &gt; DECODIFICANDO ARQUIVOS SECRETOS...
+            </span>
+          </div>
+          <Badge className="mb-6 bg-accent/20 text-accent border-accent hover:bg-accent/30 text-lg px-6 py-2 font-courier">
+            EASTER EGGS
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 font-courier">
+            Segredos da <span className="text-primary">Ordo</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-courier mb-4">
+            Mistérios ocultos esperam por aqueles com olhos para ver. Explore a interface e descubra o que está escondido.
+          </p>
+          <p className="text-sm text-accent/70 font-terminal">
+            💡 DICA: Experimente sequências de teclas, cliques em locais inesperados...
+          </p>
+        </div>
+        <SecretsDiscovered />
+      </section>
+
       {/* Timeline Section */}
       <Timeline />
+
+      {currentEgg && (
+        <EasterEggDialog
+          isOpen={showEggDialog}
+          onClose={() => setShowEggDialog(false)}
+          title={currentEgg.title}
+          description={currentEgg.description}
+          secret={currentEgg.secret}
+        />
+      )}
 
       <ClassifiedBanner
         level="FIM DE TRANSMISSÃO" 

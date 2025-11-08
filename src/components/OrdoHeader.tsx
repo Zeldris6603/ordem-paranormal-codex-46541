@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Badge } from "./ui/badge";
 import { AlertTriangle, Clock, Shield } from "lucide-react";
 
-export const OrdoHeader = () => {
+export const OrdoHeader = ({ onLogoClick }: { onLogoClick?: () => void }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [glitch, setGlitch] = useState(false);
 
@@ -46,7 +46,11 @@ export const OrdoHeader = () => {
       <div className="max-w-full px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo e Título */}
-          <div className="flex items-center gap-3">
+          <div 
+            className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={onLogoClick}
+            title="Clique 3 vezes para revelar um segredo..."
+          >
             <Shield className="h-8 w-8 text-primary" />
             <div>
               <h1 className={`text-xl md:text-2xl font-bold font-mono-tech tracking-wider ${glitch ? 'text-accent' : 'text-primary'}`}>

@@ -1,4 +1,4 @@
-import { FileText, Skull, Eye, Box, ClipboardList, Clock } from "lucide-react";
+import { FileText, Skull, Eye, Box, ClipboardList, Clock, Lock } from "lucide-react";
 import { Card } from "./ui/card";
 
 export const NavigationMenu = () => {
@@ -21,6 +21,7 @@ export const NavigationMenu = () => {
     { id: "agents", label: "Agentes", icon: Skull },
     { id: "archive", label: "Arquivo", icon: Box },
     { id: "classified-files", label: "Base de Dados", icon: Eye },
+    { id: "secrets", label: "Segredos", icon: Lock },
     { id: "timeline", label: "Linha do Tempo", icon: Clock },
   ];
 
