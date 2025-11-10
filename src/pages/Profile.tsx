@@ -25,6 +25,10 @@ import {
   Eye
 } from "lucide-react";
 import { Navigate } from "react-router-dom";
+import { ActivityChart } from "@/components/profile/ActivityChart";
+import { ActionDistributionChart } from "@/components/profile/ActionDistributionChart";
+import { WeeklyActivityChart } from "@/components/profile/WeeklyActivityChart";
+import { ProgressChart } from "@/components/profile/ProgressChart";
 
 interface ActivityLog {
   id: string;
@@ -40,6 +44,12 @@ interface Statistics {
   daysActive: number;
 }
 
+interface ChartData {
+  activityOverTime: { date: string; count: number }[];
+  actionDistribution: { name: string; value: number; color: string }[];
+  weeklyActivity: { day: string; activities: number }[];
+}
+
 export default function Profile() {
   const { agent, loading: agentLoading, logActivity } = useAgent();
   const { getProgress } = useEasterEggs();
@@ -47,6 +57,7 @@ export default function Profile() {
   
   const [activities, setActivities] = useState<ActivityLog[]>([]);
   const [statistics, setStatistics] = useState<Statistics | null>(null);
+  const [chartData, setChartData] = useState<ChartData | null>(null);
   const [loading, setLoading] = useState(true);
   const [isEditing, setIsEditing] = useState(false);
   const [editForm, setEditForm] = useState({
@@ -103,11 +114,75 @@ export default function Profile() {
         daysActive: uniqueDays
       });
 
+      // Prepare chart data
+      prepareChartData(allActivities || []);
+
     } catch (error) {
       console.error("Error loading profile data:", error);
     } finally {
       setLoading(false);
     }
+  };
+
+  const prepareChartData = (allActivities: { action: string; timestamp: string }[]) => {
+    // Activity over time (last 30 days)
+    const last30Days = Array.from({ length: 30 }, (_, i) => {
+      const date = new Date();
+      date.setDate(date.getDate() - (29 - i));
+      return date.toISOString().split('T')[0];
+    });
+
+    const activityByDate = allActivities.reduce((acc, activity) => {
+      const date = new Date(activity.timestamp).toISOString().split('T')[0];
+      acc[date] = (acc[date] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const activityOverTime = last30Days.map(date => ({
+      date: new Date(date).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }),
+      count: activityByDate[date] || 0
+    }));
+
+    // Action distribution
+    const actionCounts = allActivities.reduce((acc, activity) => {
+      acc[activity.action] = (acc[activity.action] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const actionLabels: Record<string, string> = {
+      FILE_ACCESS: "Arquivos",
+      EASTER_EGG_DISCOVERED: "Segredos",
+      PROFILE_UPDATED: "Perfil",
+      LOGIN: "Login",
+      LOGOUT: "Logout"
+    };
+
+    const actionDistribution = Object.entries(actionCounts).map(([action, count]) => ({
+      name: actionLabels[action] || action,
+      value: count,
+      color: ""
+    }));
+
+    // Weekly activity (last 7 days)
+    const last7Days = Array.from({ length: 7 }, (_, i) => {
+      const date = new Date();
+      date.setDate(date.getDate() - (6 - i));
+      return date;
+    });
+
+    const weeklyActivity = last7Days.map(date => {
+      const dateStr = date.toISOString().split('T')[0];
+      return {
+        day: date.toLocaleDateString('pt-BR', { weekday: 'short' }),
+        activities: activityByDate[dateStr] || 0
+      };
+    });
+
+    setChartData({
+      activityOverTime,
+      actionDistribution,
+      weeklyActivity
+    });
   };
 
   const handleSaveProfile = async () => {
@@ -297,6 +372,7 @@ export default function Profile() {
         <Tabs defaultValue="info" className="space-y-6">
           <TabsList>
             <TabsTrigger value="info">Informações</TabsTrigger>
+            <TabsTrigger value="stats">Estatísticas</TabsTrigger>
             <TabsTrigger value="activity">Histórico</TabsTrigger>
           </TabsList>
 
@@ -379,6 +455,34 @@ export default function Profile() {
                 </div>
               </CardContent>
             </Card>
+          </TabsContent>
+
+          <TabsContent value="stats" className="space-y-6">
+            <div className="grid gap-6 md:grid-cols-2">
+              {chartData && (
+                <>
+                  <ActivityChart 
+                    data={chartData.activityOverTime} 
+                    themeColor={agent.theme_color}
+                  />
+                  <ActionDistributionChart 
+                    data={chartData.actionDistribution}
+                  />
+                  <WeeklyActivityChart 
+                    data={chartData.weeklyActivity}
+                    themeColor={agent.theme_color}
+                  />
+                  {statistics && (
+                    <ProgressChart 
+                      easterEggsProgress={getProgress().percentage}
+                      filesAccessedProgress={(statistics.filesAccessed / 10) * 100}
+                      daysActiveProgress={(statistics.daysActive / 30) * 100}
+                      themeColor={agent.theme_color}
+                    />
+                  )}
+                </>
+              )}
+            </div>
           </TabsContent>
 
           <TabsContent value="activity" className="space-y-6">
