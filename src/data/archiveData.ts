@@ -722,4 +722,612 @@ export const archiveItems = [
       <p style="font-style: italic;">"A Casa Invertida é prova de que a realidade é mais frágil do que pensamos. Baltazar conseguiu quebrá-la com conhecimento e rituais. Se O Coletivo aprender a replicar isso... cada cidade pode se tornar uma Casa Invertida."</p>
     `
   },
+
+  // PROTOCOLOS DA ORDEM
+  {
+    id: "protocol-alfa-9",
+    title: "Protocolo Alfa-9: Contenção de Anomalias",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Protocolo padrão de contenção para anomalias paranormais de baixo a médio risco. Estabelece perímetro de segurança e procedimentos de isolamento.",
+    content: `
+      <p><strong>PROTOCOLO:</strong> Alfa-9</p>
+      <p><strong>DESIGNAÇÃO:</strong> Contenção de Anomalias</p>
+      <p><strong>NÍVEL DE AUTORIZAÇÃO:</strong> Agentes de Campo Nível 2 ou superior</p>
+      <p><strong>ÚLTIMA ATUALIZAÇÃO:</strong> 2023</p>
+      
+      <p><strong>OBJETIVO:</strong></p>
+      <p>Estabelecer contenção rápida e efetiva de anomalias paranormais classes A, B e C antes que possam causar dano significativo à população civil ou exposição pública.</p>
+      
+      <p><strong>PROCEDIMENTO DE ATIVAÇÃO:</strong></p>
+      <ol>
+        <li><strong>DETECÇÃO:</strong> Anomalia identificada através de sensores, relatos civis ou observação direta</li>
+        <li><strong>CLASSIFICAÇÃO:</strong> Avaliação rápida do nível de ameaça (Classe A-F)</li>
+        <li><strong>AUTORIZAÇÃO:</strong> Contato com Central da Ordo para ativação formal do protocolo</li>
+        <li><strong>EXECUÇÃO:</strong> Desdobramento de equipe de contenção no local</li>
+      </ol>
+      
+      <p><strong>FASES DE CONTENÇÃO:</strong></p>
+      
+      <p><strong>FASE 1 - PERÍMETRO (0-30 minutos):</strong></p>
+      <ul>
+        <li>Estabelecer zona de exclusão de 50-200 metros (dependendo da anomalia)</li>
+        <li>Evacuar civis usando cobertura padrão ("vazamento de gás", "emergência química", etc.)</li>
+        <li>Instalar sensores de monitoramento paranormal nos pontos cardinais</li>
+        <li>Ativar geradores de campo eletromagnético para dificultar manifestações</li>
+      </ul>
+      
+      <p><strong>FASE 2 - ANÁLISE (30-90 minutos):</strong></p>
+      <ul>
+        <li>Especialistas conduzem avaliação in loco da anomalia</li>
+        <li>Determinar origem, natureza e comportamento da manifestação</li>
+        <li>Identificar possíveis gatilhos ou padrões de atividade</li>
+        <li>Preparar equipamento específico para contenção definitiva</li>
+      </ul>
+      
+      <p><strong>FASE 3 - CONTENÇÃO ATIVA (variável):</strong></p>
+      <ul>
+        <li>Implementar barreiras físicas e místicas apropriadas</li>
+        <li>Para entidades conscientes: tentativa de comunicação e negociação</li>
+        <li>Para objetos: isolamento em container de contenção classe Delta</li>
+        <li>Para locais: instalação de selos de banimento permanentes</li>
+      </ul>
+      
+      <p><strong>FASE 4 - VERIFICAÇÃO (pós-contenção):</strong></p>
+      <ul>
+        <li>Monitoramento contínuo por 72 horas</li>
+        <li>Verificação da integridade das barreiras de contenção</li>
+        <li>Aplicação de amnésticos classe B em testemunhas civis</li>
+        <li>Documentação completa do incidente</li>
+      </ul>
+      
+      <p><strong>EQUIPAMENTO PADRÃO:</strong></p>
+      <ul>
+        <li>Detectores EMF e câmeras de espectro completo</li>
+        <li>Kits de banimento (sal consagrado, ferro frio, prata coloidal)</li>
+        <li>Geradores portáteis de campo EM</li>
+        <li>Containers de contenção classes Delta e Gamma</li>
+        <li>Armamento padrão + munição de prata e ferro</li>
+        <li>Amuletos de proteção individual</li>
+      </ul>
+      
+      <p><strong>ESCALAÇÃO:</strong></p>
+      <p style="color: #ef4444;">Se a anomalia for reclassificada para Classe D ou superior durante contenção, o Protocolo Alfa-9 deve ser ABORTADO imediatamente e substituído por Protocolo Sigma (Extração) ou Protocolo Quarentena, dependendo da situação.</p>
+      
+      <p><strong>TAXA DE SUCESSO:</strong></p>
+      <p>87% de contenção bem-sucedida em anomalias Classe A-C nos últimos 5 anos.</p>
+      
+      <p><strong>CASOS NOTÁVEIS:</strong></p>
+      <ul>
+        <li>Contenção do Lodo Vivo em zona industrial (2021) - Sucesso</li>
+        <li>Isolamento da Criança Fantasma no orfanato abandonado (2022) - Sucesso parcial</li>
+        <li>Tentativa de contenção do Deus da Morte (2 anos atrás) - FALHA CRÍTICA</li>
+      </ul>
+      
+      <p><strong>NOTA OPERACIONAL:</strong></p>
+      <p>"Alfa-9 é nosso pão com manteiga. Todo agente precisa conhecer esse protocolo de cor. A diferença entre contenção e catástrofe geralmente são os primeiros 30 minutos." - Dante, Operador de Campo Sênior</p>
+    `
+  },
+  {
+    id: "protocol-sigma",
+    title: "Protocolo Sigma: Extração de Agentes Comprometidos",
+    type: "protocol" as const,
+    classification: "ACESSO RESTRITO",
+    preview: "Procedimento de resgate para agentes feridos, possuídos ou presos em ambientes paranormais hostis. Autorização de Dante ou superior requerida.",
+    content: `
+      <p><strong>PROTOCOLO:</strong> Sigma</p>
+      <p><strong>DESIGNAÇÃO:</strong> Extração de Agentes Comprometidos</p>
+      <p><strong>NÍVEL DE AUTORIZAÇÃO:</strong> Dante, Veríssimo ou Comando Superior</p>
+      <p><strong>CÓDIGO DE PRIORIDADE:</strong> MÁXIMA</p>
+      
+      <p><strong>PRINCÍPIO FUNDAMENTAL:</strong></p>
+      <p style="font-weight: bold; color: #22c55e;">"Nenhum agente fica para trás."</p>
+      
+      <p><strong>QUANDO ATIVAR:</strong></p>
+      <ul>
+        <li>Agente ferido e incapaz de evacuar por conta própria</li>
+        <li>Agente preso em zona de anomalia ativa</li>
+        <li>Agente sob possessão ou corrupção paranormal</li>
+        <li>Perda de comunicação em operação de alto risco por mais de 30 minutos</li>
+        <li>Sinal de emergência ativado (código vermelho)</li>
+      </ul>
+      
+      <p><strong>EQUIPE DE EXTRAÇÃO:</strong></p>
+      <p>Mínimo de 3 operadores, idealmente incluindo:</p>
+      <ul>
+        <li>1 Especialista em Combate (líder da equipe)</li>
+        <li>1 Médico de Campo ou Paramédico</li>
+        <li>1 Especialista em Paranormalidade (para neutralizar ameaças místicas)</li>
+        <li>Dante (quando disponível - taxa de sucesso aumenta 340%)</li>
+      </ul>
+      
+      <p><strong>PROCEDIMENTO PADRÃO:</strong></p>
+      
+      <p><strong>FASE PRÉ-INCURSÃO:</strong></p>
+      <ol>
+        <li>Reunir inteligência sobre o local e natureza da ameaça</li>
+        <li>Equipar equipe com armamento pesado e amuletos de proteção reforçados</li>
+        <li>Estabelecer ponto de exfiltração seguro a no máximo 500m</li>
+        <li>Coordenar com equipe médica de emergência no ponto de exfil</li>
+        <li>Preparar rituais de banimento de emergência</li>
+      </ol>
+      
+      <p><strong>FASE DE PENETRAÇÃO:</strong></p>
+      <ul>
+        <li>Entrada rápida e agressiva na zona hostil</li>
+        <li>Uso de granadas de ferro frio e sal consagrado para abrir caminho</li>
+        <li>Comunicação constante com Central via rádio encriptado</li>
+        <li>Marcação de rota de fuga com balizas luminosas</li>
+      </ul>
+      
+      <p><strong>FASE DE LOCALIZAÇÃO:</strong></p>
+      <ul>
+        <li>Usar rastreadores biométricos para localizar agente</li>
+        <li>Avaliar condição do agente (físico, mental, espiritual)</li>
+        <li>Se possível, estabelecer contato verbal para verificar consciência</li>
+        <li>Identificar ameaças imediatas ao redor do agente</li>
+      </ul>
+      
+      <p><strong>FASE DE EXTRAÇÃO:</strong></p>
+      <ul>
+        <li>Neutralizar ou distrair entidades hostis</li>
+        <li>Aplicar primeiros socorros imediatos</li>
+        <li>Se agente estiver possuído: aplicar selo de contenção temporário</li>
+        <li>Transportar agente para ponto de exfiltração o mais rápido possível</li>
+        <li>Usar explosivos ou rituais destrutivos para cobrir a retirada se necessário</li>
+      </ul>
+      
+      <p><strong>FASE PÓS-EXTRAÇÃO:</strong></p>
+      <ul>
+        <li>Avaliação médica completa</li>
+        <li>Varredura paranormal para detectar contaminação ou possessão</li>
+        <li>Quarentena de 72 horas se corrupção for suspeita</li>
+        <li>Debriefing psicológico obrigatório</li>
+        <li>Afastamento temporário até liberação médica</li>
+      </ul>
+      
+      <p><strong>CENÁRIOS ESPECIAIS:</strong></p>
+      
+      <p><strong>POSSESSÃO CONFIRMADA:</strong></p>
+      <p>Se o agente estiver possuído, o objetivo muda de "extração" para "captura e exorcismo". Usar força não-letal. Transportar em container de contenção. Realizar exorcismo apenas em instalação segura com equipe especializada.</p>
+      
+      <p><strong>AGENTE EM LOOP TEMPORAL:</strong></p>
+      <p>Se o agente estiver preso em loop de tempo (raro, mas documentado), aplicar disruptor de anomalia temporal. Se isso falhar, marcar localização e consultar Santer para solução específica.</p>
+      
+      <p><strong>MÚLTIPLOS AGENTES COMPROMETIDOS:</strong></p>
+      <p>Priorizar extração de agentes conscientes primeiro. Agentes inconscientes ou possuídos são extraídos em segunda onda se possível.</p>
+      
+      <p><strong>EQUIPAMENTO CRÍTICO:</strong></p>
+      <ul>
+        <li>Armadura tática reforçada com selos de proteção</li>
+        <li>Munição abençoada e ferro frio</li>
+        <li>Disruptores de anomalia portáteis</li>
+        <li>Macas de evacuação reforçadas</li>
+        <li>Kits de primeiros socorros paranormais</li>
+        <li>Selos de contenção temporários</li>
+      </ul>
+      
+      <p><strong>ESTATÍSTICAS:</strong></p>
+      <ul>
+        <li>Taxa de sucesso geral: 73%</li>
+        <li>Taxa de sucesso com Dante: 91%</li>
+        <li>Baixas em operações Sigma: 12% (últimos 10 anos)</li>
+      </ul>
+      
+      <p><strong>CASOS NOTÁVEIS:</strong></p>
+      <ul>
+        <li>Resgate de Santer e Marine após Incidente Deus da Morte - Sucesso parcial (Firenze e Aristoteles KIA)</li>
+        <li>Operação Nightfall (2015) - 8 agentes extraídos de zona de Lodo Vivo - Sucesso total</li>
+        <li>Extração do Subsolo (2018) - Dante único sobrevivente da equipe de resgate</li>
+      </ul>
+      
+      <p><strong>NOTA DE DANTE:</strong></p>
+      <p style="font-style: italic; background: rgba(34, 197, 94, 0.1); padding: 10px;">"Sigma não é sobre heroísmo. É sobre competência, velocidade e não hesitar. Você entra, pega seu companheiro e sai. Cada segundo que você perde pensando é um segundo que o Outro Lado tem para matá-los. E nunca, NUNCA deixe orgulho ou medo te impedir de chamar reforços."</p>
+    `
+  },
+  {
+    id: "protocol-omega-13",
+    title: "Protocolo Ômega-13: Último Recurso",
+    type: "protocol" as const,
+    classification: "ULTRA-SECRETO",
+    preview: "Protocolo de aniquilação total. Apenas 5 pessoas têm autorização. Implica destruição completa de zona contaminada e tudo dentro dela. Irreversível.",
+    content: `
+      <p><strong>PROTOCOLO:</strong> Ômega-13</p>
+      <p><strong>DESIGNAÇÃO:</strong> Último Recurso / Aniquilação Total</p>
+      <p><strong>NÍVEL DE AUTORIZAÇÃO:</strong> ULTRA-SECRETO</p>
+      <p style="color: #ef4444; font-weight: bold;">⚠️ APENAS 5 INDIVÍDUOS POSSUEM AUTORIZAÇÃO PARA ATIVAR ESTE PROTOCOLO</p>
+      
+      <p><strong>INDIVÍDUOS AUTORIZADOS:</strong></p>
+      <ol>
+        <li>Veríssimo (Diretor de Operações)</li>
+        <li>[REDACTED] (Conselho Superior)</li>
+        <li>[REDACTED] (Conselho Superior)</li>
+        <li>[REDACTED] (Conselho Superior)</li>
+        <li>[REDACTED] (Identidade classificada)</li>
+      </ol>
+      
+      <p><strong>DEFINIÇÃO:</strong></p>
+      <p>Protocolo Ômega-13 representa a admissão de que uma ameaça paranormal não pode ser contida por meios convencionais e que sua contenção falha resultaria em catástrofe de escala regional ou global. A ativação deste protocolo autoriza a destruição completa e irreversível de uma zona geográfica definida usando todos os meios necessários.</p>
+      
+      <p><strong>CRITÉRIOS DE ATIVAÇÃO:</strong></p>
+      <p>Protocolo Ômega-13 só pode ser considerado quando TODOS os critérios abaixo são atendidos:</p>
+      <ol>
+        <li>Anomalia classificada como Classe F (Extinção em Potencial) ou superior</li>
+        <li>Falha confirmada de pelo menos 3 protocolos de contenção diferentes</li>
+        <li>Projeção indica expansão incontrolável da anomalia</li>
+        <li>Impossibilidade de evacuação completa de área afetada</li>
+        <li>Consenso unânime dos 5 indivíduos autorizados</li>
+      </ol>
+      
+      <p><strong>METODOLOGIA:</strong></p>
+      <p style="color: #ef4444;">INFORMAÇÃO ALTAMENTE CLASSIFICADA - Detalhes específicos removidos desta versão</p>
+      <p>A aniquilação envolve combinação de:</p>
+      <ul>
+        <li>[REDACTED] - Arsenal tático não-convencional</li>
+        <li>[REDACTED] - Ritual de banimento permanente de escala massiva</li>
+        <li>[REDACTED] - Criação de "zona morta" paranormal</li>
+        <li>Cobertura narrativa para população civil (desastre natural, acidente industrial, etc.)</li>
+      </ul>
+      
+      <p><strong>CONSEQUÊNCIAS:</strong></p>
+      <ul>
+        <li><strong>Baixas civis:</strong> Esperadas e inevitáveis</li>
+        <li><strong>Baixas da Ordo:</strong> Todo pessoal dentro da zona de aniquilação</li>
+        <li><strong>Contaminação paranormal:</strong> Área se torna inabitável por 10-50 anos</li>
+        <li><strong>Impacto ambiental:</strong> Severo e duradouro</li>
+        <li><strong>Atenção internacional:</strong> Requer coordenação com governos e operações de encobrimento massivas</li>
+      </ul>
+      
+      <p><strong>HISTÓRICO DE ATIVAÇÃO:</strong></p>
+      <p>Desde a fundação da Ordo Realitas em [REDACTED], o Protocolo Ômega-13 foi ativado oficialmente em:</p>
+      <ul>
+        <li><strong>1908:</strong> [LOCALIZAÇÃO REDACTED] - Evento de Tunguska (cobertura oficial: meteoro)</li>
+        <li><strong>1986:</strong> Chernobyl, Ucrânia - [DETALHES REDACTED] (cobertura oficial: acidente nuclear)</li>
+        <li><strong>20██:</strong> [LOCALIZAÇÃO E DETALHES COMPLETAMENTE REDACTED]</li>
+      </ul>
+      
+      <p><strong>ZONA DE ANIQUILAÇÃO:</strong></p>
+      <p>O protocolo define três perímetros concêntricos:</p>
+      <ul>
+        <li><strong>Zona Vermelha (0-2km):</strong> Aniquilação total. Sobrevivência: 0%</li>
+        <li><strong>Zona Amarela (2-5km):</strong> Destruição severa. Sobrevivência: &lt;5%</li>
+        <li><strong>Zona Verde (5-10km):</strong> Contaminação residual. Evacuação mandatória.</li>
+      </ul>
+      
+      <p><strong>PROCEDIMENTO DE ATIVAÇÃO:</strong></p>
+      <ol>
+        <li>Reunião de emergência dos 5 autorizados (presencial ou via linha segura)</li>
+        <li>Apresentação de evidências e projeções</li>
+        <li>Votação (deve ser unânime)</li>
+        <li>Confirmação via códigos de autenticação únicos</li>
+        <li>Janela de 6 horas para evacuação de pessoal autorizado</li>
+        <li>Execução</li>
+        <li>Contenção de informação e narrativa de cobertura</li>
+      </ol>
+      
+      <p><strong>PÓS-ÔMEGA-13:</strong></p>
+      <p>Após ativação, a área afetada é:</p>
+      <ul>
+        <li>Isolada permanentemente com justificativa civil</li>
+        <li>Monitorada remotamente por no mínimo 25 anos</li>
+        <li>Documentada extensivamente para prevenir recorrências</li>
+        <li>Marcada em mapas secretos da Ordo como "Zona Morta Ômega"</li>
+      </ul>
+      
+      <p><strong>PROTOCOLO ÔMEGA-13 E O DEUS DA MORTE:</strong></p>
+      <p style="color: #ef4444;">Durante o Incidente Deus da Morte, o Protocolo Ômega-13 foi CONSIDERADO mas NÃO ativado. Dante conseguiu extrair Marine e Santer a tempo, e a entidade aparentemente "recuou" para o Outro Lado. Se a extração tivesse falhado, a cidade inteira teria sido aniquilada.</p>
+      
+      <p><strong>DILEMA MORAL:</strong></p>
+      <p style="font-style: italic; background: rgba(239, 68, 68, 0.1); padding: 10px;">"Ômega-13 não é um protocolo. É uma confissão. É a admissão de que existem coisas que não podemos combater, apenas destruir. E quando destruímos, levamos inocentes conosco. Cada vez que discutimos ativar Ômega-13, eu me pergunto: estamos protegendo a humanidade ou apenas escolhendo quais humanos sacrificar?"</p>
+      <p style="text-align: right;">- Veríssimo, notas pessoais</p>
+      
+      <p><strong>NOTA FINAL:</strong></p>
+      <p style="color: #ef4444; font-weight: bold;">Se você está lendo isto e não é um dos 5 autorizados, seu acesso foi registrado e você será investigado. O conhecimento da existência deste protocolo já é uma violação de segurança. Espere contato imediato do Departamento de Segurança Interna.</p>
+    `
+  },
+  {
+    id: "protocol-quarantine",
+    title: "Protocolo Quarentena: Isolamento de Zonas Contaminadas",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Protocolo de isolamento de longo prazo para áreas com contaminação paranormal persistente. Estabelece perímetro permanente e monitoramento contínuo.",
+    content: `
+      <p><strong>PROTOCOLO:</strong> Quarentena</p>
+      <p><strong>DESIGNAÇÃO:</strong> Isolamento de Zonas Contaminadas</p>
+      <p><strong>NÍVEL DE AUTORIZAÇÃO:</strong> Veríssimo ou Conselho Superior</p>
+      <p><strong>DURAÇÃO:</strong> Indefinida (revisão trimestral obrigatória)</p>
+      
+      <p><strong>OBJETIVO:</strong></p>
+      <p>Estabelecer isolamento de longo prazo para locais onde a contaminação paranormal não pode ser eliminada com métodos atuais, mas pode ser contida para prevenir expansão e exposição pública.</p>
+      
+      <p><strong>QUANDO APLICAR:</strong></p>
+      <ul>
+        <li>Contaminação paranormal persistente e não-dissipável</li>
+        <li>Presença de entidades que não podem ser banidas mas podem ser confinadas</li>
+        <li>Anomalias espaciais ou temporais estáveis mas perigosas</li>
+        <li>Locais de rituais falhados com efeitos residuais duradouros</li>
+        <li>Áreas onde o "véu" entre mundos está permanentemente enfraquecido</li>
+      </ul>
+      
+      <p><strong>CLASSIFICAÇÃO DE ZONAS:</strong></p>
+      
+      <p><strong>ZONA TIPO I - CONTAMINAÇÃO LEVE:</strong></p>
+      <ul>
+        <li>Efeitos paranormais menores e intermitentes</li>
+        <li>Risco baixo para população externa</li>
+        <li>Perímetro: 50-100 metros</li>
+        <li>Exemplo: Residências com assombrações persistentes, cemitérios ativos</li>
+      </ul>
+      
+      <p><strong>ZONA TIPO II - CONTAMINAÇÃO MODERADA:</strong></p>
+      <ul>
+        <li>Manifestações regulares de entidades</li>
+        <li>Efeitos cognitivos em humanos expostos</li>
+        <li>Perímetro: 100-500 metros</li>
+        <li>Exemplo: Hospitais psiquiátricos abandonados, campos de batalha antigos</li>
+      </ul>
+      
+      <p><strong>ZONA TIPO III - CONTAMINAÇÃO SEVERA:</strong></p>
+      <ul>
+        <li>Realidade distorcida dentro da zona</li>
+        <li>Entidades de alto nível confinadas</li>
+        <li>Perímetro: 500-2000 metros</li>
+        <li>Exemplo: A Casa Invertida, Metrô Linha Fantasma</li>
+      </ul>
+      
+      <p><strong>ZONA TIPO IV - CONTAMINAÇÃO CRÍTICA:</strong></p>
+      <ul>
+        <li>Risco existencial se contenção falhar</li>
+        <li>Possível portal para o Outro Lado</li>
+        <li>Perímetro: 2-5 quilômetros</li>
+        <li>Exemplo: [LOCALIZAÇÃO REDACTED] - Local do incidente de [REDACTED]</li>
+      </ul>
+      
+      <p><strong>PROCEDIMENTO DE IMPLEMENTAÇÃO:</strong></p>
+      
+      <p><strong>FASE 1 - AVALIAÇÃO (0-7 dias):</strong></p>
+      <ol>
+        <li>Equipe especializada realiza análise completa da zona</li>
+        <li>Mapeamento de extensão da contaminação</li>
+        <li>Identificação de fontes primárias</li>
+        <li>Determinação de classificação da zona (Tipo I-IV)</li>
+        <li>Cálculo de perímetro de segurança necessário</li>
+      </ol>
+      
+      <p><strong>FASE 2 - ESTABELECIMENTO (7-30 dias):</strong></p>
+      <ol>
+        <li>Evacuação completa de civis (usando cobertura apropriada)</li>
+        <li>Construção de barreira física (cercas, muros, bloqueios de estrada)</li>
+        <li>Instalação de selos de contenção místicos nos pontos cardinais</li>
+        <li>Colocação de sensores de monitoramento paranormal</li>
+        <li>Estabelecimento de posto de observação permanente</li>
+        <li>Implantação de narrativa de cobertura para público</li>
+      </ol>
+      
+      <p><strong>FASE 3 - MANUTENÇÃO (contínua):</strong></p>
+      <ul>
+        <li>Inspeção semanal do perímetro</li>
+        <li>Renovação mensal de selos místicos</li>
+        <li>Monitoramento 24/7 via sensores remotos</li>
+        <li>Patrulha regular para prevenir intrusões</li>
+        <li>Testes trimestrais de integridade da contenção</li>
+      </ul>
+      
+      <p><strong>NARRATIVAS DE COBERTURA PADRÃO:</strong></p>
+      <ul>
+        <li><strong>Urbana:</strong> Contaminação química, risco estrutural, propriedade privada</li>
+        <li><strong>Rural:</strong> Resíduos tóxicos, área de conservação ambiental, campo minado</li>
+        <li><strong>Industrial:</strong> Acidente nuclear/químico, zona de radiação</li>
+        <li><strong>Histórica:</strong> Preservação arqueológica, risco de colapso</li>
+      </ul>
+      
+      <p><strong>PESSOAL AUTORIZADO:</strong></p>
+      <ul>
+        <li>Equipes de manutenção: 4-6 agentes por zona</li>
+        <li>Equipes de pesquisa: Apenas com autorização especial</li>
+        <li>Equipes de resposta rápida: Em standby para emergências</li>
+        <li>Entrada de civis: PROIBIDA sob qualquer circunstância</li>
+      </ul>
+      
+      <p><strong>EQUIPAMENTO OBRIGATÓRIO:</strong></p>
+      <ul>
+        <li>Traje de proteção paranormal</li>
+        <li>Amuletos de proteção pessoal</li>
+        <li>Detectores de anomalia portáteis</li>
+        <li>Rádio de emergência com alcance estendido</li>
+        <li>Kit de primeiros socorros paranormais</li>
+        <li>Sinal de emergência (código vermelho)</li>
+      </ul>
+      
+      <p><strong>PROTOCOLOS DE EMERGÊNCIA:</strong></p>
+      
+      <p><strong>VIOLAÇÃO DE PERÍMETRO:</strong></p>
+      <p>Se civis entrarem na zona: Extração imediata. Amnésticos classe B-C. Quarentena médica de 48h para verificar contaminação.</p>
+      
+      <p><strong>FALHA DE CONTENÇÃO:</strong></p>
+      <p>Se sensores detectarem expansão da contaminação: Ativar Protocolo Alfa-9. Se Alfa-9 falhar, considerar Protocolo Ômega-13 para Zonas Tipo IV.</p>
+      
+      <p><strong>MANIFESTAÇÃO EXTERNA:</strong></p>
+      <p>Se entidades escaparem do perímetro: Equipe de resposta rápida ativa Protocolo Sigma para contenção ou banimento.</p>
+      
+      <p><strong>ZONAS ATIVAS ATUAIS:</strong></p>
+      <ul>
+        <li>A Casa Invertida - São Paulo (Zona Tipo III)</li>
+        <li>Metrô Linha Fantasma - [CIDADE REDACTED] (Zona Tipo III)</li>
+        <li>Cemitério dos Esquecidos - [CIDADE REDACTED] (Zona Tipo II)</li>
+        <li>Hotel Cascavel - Interior do Paraná (Zona Tipo III)</li>
+        <li>[17 OUTRAS LOCALIZAÇÕES CLASSIFICADAS]</li>
+      </ul>
+      
+      <p><strong>CUSTO OPERACIONAL:</strong></p>
+      <p>Manutenção de zona de quarentena custa aproximadamente R$ 150.000 - R$ 2.000.000 por ano, dependendo do tipo. Atualmente, a Ordo mantém 21 zonas ativas globalmente, representando 23% do orçamento operacional anual.</p>
+      
+      <p><strong>PESQUISA E DESENVOLVIMENTO:</strong></p>
+      <p>Zonas de quarentena também servem como laboratórios naturais. Pesquisadores estudam a contaminação em ambiente controlado, buscando métodos de purificação permanente. 3 zonas foram desativadas nos últimos 10 anos após desenvolvimento de técnicas de banimento avançadas.</p>
+      
+      <p><strong>NOTA DE CAMPO - MARINE FLAMARION:</strong></p>
+      <p style="font-style: italic; background: rgba(239, 68, 68, 0.1); padding: 10px;">"Zonas de quarentena me deixam desconfortável. Não é uma solução - é uma admissão de que não temos solução. Estamos apenas esperando que a contenção aguente até descobrirmos como lidar com isso de verdade. Mas e se nunca descobrirmos? Essas zonas vão existir para sempre?"</p>
+    `
+  },
+  {
+    id: "protocol-veil",
+    title: "Protocolo Véu: Encobrimento de Eventos Paranormais",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Protocolo de controle de informação e encobrimento público. Gestão de testemunhas, manipulação de narrativas e aplicação de amnésticos.",
+    content: `
+      <p><strong>PROTOCOLO:</strong> Véu</p>
+      <p><strong>DESIGNAÇÃO:</strong> Encobrimento de Eventos Paranormais</p>
+      <p><strong>NÍVEL DE AUTORIZAÇÃO:</strong> Coordenadores de Operação ou superior</p>
+      <p><strong>PRIORIDADE:</strong> CRÍTICA</p>
+      
+      <p><strong>FILOSOFIA CENTRAL:</strong></p>
+      <p>"O maior poder da Ordo não é combater o paranormal - é garantir que o mundo nunca saiba que precisamos combatê-lo."</p>
+      
+      <p><strong>OBJETIVO:</strong></p>
+      <p>Manter o conhecimento sobre fenômenos paranormais restrito a círculos autorizados, prevenindo pânico em massa, colapso social e interferência de governos ou organizações hostis nas operações da Ordo.</p>
+      
+      <p><strong>JUSTIFICATIVA:</strong></p>
+      <p>Estudos psicossociológicos indicam que revelação pública da existência do paranormal resultaria em:</p>
+      <ul>
+        <li>Colapso de sistemas de crença estabelecidos</li>
+        <li>Histeria coletiva e violência em massa</li>
+        <li>Caça às bruxas moderna contra suspeitos de atividade paranormal</li>
+        <li>Exploração por grupos terroristas e cultos</li>
+        <li>Intervenção militar desastrosa em fenômenos que força bruta não pode resolver</li>
+      </ul>
+      
+      <p><strong>NÍVEIS DE ENCOBRIMENTO:</strong></p>
+      
+      <p><strong>NÍVEL 1 - INCIDENTE ISOLADO:</strong></p>
+      <p>Testemunhas: 1-5 pessoas | Evidências: Mínimas</p>
+      <ul>
+        <li>Aplicar amnésticos classe A (memória vaga e confusa)</li>
+        <li>Remover evidências físicas</li>
+        <li>Plantar memórias falsas simples (animal, alucinação, mal-entendido)</li>
+        <li>Tempo de operação: 2-4 horas</li>
+      </ul>
+      
+      <p><strong>NÍVEL 2 - INCIDENTE PÚBLICO LIMITADO:</strong></p>
+      <p>Testemunhas: 5-50 pessoas | Evidências: Moderadas</p>
+      <ul>
+        <li>Amnésticos classe B para testemunhas diretas</li>
+        <li>Controlar narrativa em mídias sociais (remoção de posts, desacreditar vídeos)</li>
+        <li>Cobertura alternativa via contatos na imprensa ("explosão de gás", "exercício militar", etc.)</li>
+        <li>Confisco de gravações e fotografias</li>
+        <li>Tempo de operação: 12-24 horas</li>
+      </ul>
+      
+      <p><strong>NÍVEL 3 - EXPOSIÇÃO MASSIVA:</strong></p>
+      <p>Testemunhas: 50+ pessoas | Evidências: Substanciais | Cobertura de mídia: Provável</p>
+      <ul>
+        <li>Operação de informação em grande escala</li>
+        <li>Coordenação com autoridades locais (polícia, governo)</li>
+        <li>Campanha de desinformação ativa (bots, influenciadores, "especialistas")</li>
+        <li>Criação de narrativa alternativa complexa e crível</li>
+        <li>Amnésticos classe C para testemunhas-chave</li>
+        <li>Possível envolvimento de agências governamentais aliadas</li>
+        <li>Tempo de operação: 48-72 horas</li>
+      </ul>
+      
+      <p><strong>NÍVEL 4 - CRISE DE REVELAÇÃO:</strong></p>
+      <p>Cobertura internacional | Evidências irrefutáveis | Risco de revelação global</p>
+      <ul>
+        <li>Ativação de "Plano Manto" - protocolo de encobrimento de última instância</li>
+        <li>Coordenação internacional com todas as organizações aliadas</li>
+        <li>Envolvimento direto de governos do G20</li>
+        <li>Campanha de descrédito massiva (CGI falso, atores, teoria da conspiração)</li>
+        <li>Se necessário: Fabricar "revelação oficial" controlada com informações falsas</li>
+        <li>Tempo de operação: Semanas a meses</li>
+      </ul>
+      
+      <p><strong>AMNÉSTICOS:</strong></p>
+      <p>Substâncias ou rituais que alteram memórias recentes:</p>
+      <ul>
+        <li><strong>Classe A:</strong> Confusão leve, memórias vagas (efeitos passam em 48h)</li>
+        <li><strong>Classe B:</strong> Apagamento de 4-6 horas de memória</li>
+        <li><strong>Classe C:</strong> Apagamento de até 24 horas + implantação de memórias falsas</li>
+        <li><strong>Classe D:</strong> Apagamento profundo (até 1 semana) - REQUER AUTORIZAÇÃO ESPECIAL</li>
+        <li><strong>Classe E:</strong> [CLASSIFICADO] - Usado apenas em casos extremos</li>
+      </ul>
+      
+      <p><strong>EFEITOS COLATERAIS:</strong></p>
+      <p>Amnésticos não são perfeitos. Efeitos colaterais incluem:</p>
+      <ul>
+        <li>Dores de cabeça persistentes (24-72h)</li>
+        <li>Sensação de "déjà vu" ou sonhos perturbadores</li>
+        <li>Em 3% dos casos: Memórias retornam parcialmente após 6-12 meses</li>
+        <li>Uso repetido pode causar dano neurológico permanente</li>
+      </ul>
+      
+      <p><strong>CONTROLE DE MÍDIAS:</strong></p>
+      
+      <p><strong>DIGITAIS:</strong></p>
+      <ul>
+        <li>Unidade de Cibersegurança monitora constantemente palavras-chave paranormais</li>
+        <li>Algoritmos automatizados sinalizam postagens suspeitas</li>
+        <li>Equipe de remoção age em 15-45 minutos</li>
+        <li>Vídeos/fotos reais são "debunkados" com análises falsas de CGI</li>
+        <li>Contas persistentes são hackeadas ou desacreditadas</li>
+      </ul>
+      
+      <p><strong>TRADICIONAIS:</strong></p>
+      <ul>
+        <li>Contatos em todas as principais redes de TV e jornais</li>
+        <li>Matérias problemáticas são "mortas" antes de ir ao ar</li>
+        <li>Jornalistas curiosos recebem "informações exclusivas" falsas para desviá-los</li>
+        <li>Em casos extremos: Pressão corporativa ou ameaças legais</li>
+      </ul>
+      
+      <p><strong>NARRATIVAS DE COBERTURA COMUNS:</strong></p>
+      <ul>
+        <li><strong>Destruição/Incêndio:</strong> Vazamento de gás, curto-circuito elétrico</li>
+        <li><strong>Desaparecimentos:</strong> Fuga voluntária, sequestro comum, acidente</li>
+        <li><strong>Mortes inexplicáveis:</strong> Ataque cardíaco, aneurisma, suicídio</li>
+        <li><strong>Fenômenos visuais:</strong> Reflexos de luz, balões meteorológicos, drones</li>
+        <li><strong>Sons estranhos:</strong> Fenômenos naturais, obras de construção, animais</li>
+        <li><strong>Luzes no céu:</strong> Satélites, aviões, fenômenos atmosféricos</li>
+      </ul>
+      
+      <p><strong>TESTEMUNHAS PROBLEMÁTICAS:</strong></p>
+      <p>Alguns indivíduos não respondem a amnésticos ou se recusam a aceitar explicações alternativas:</p>
+      <ul>
+        <li><strong>Opção 1:</strong> Recrutamento para a Ordo (se compatível)</li>
+        <li><strong>Opção 2:</strong> Monitoramento contínuo e desacredito social</li>
+        <li><strong>Opção 3:</strong> Internação psiquiátrica com diagnóstico fabricado</li>
+        <li><strong>Opção 4:</strong> [REDACTED] - Apenas com autorização do Conselho</li>
+      </ul>
+      
+      <p><strong>COORDENAÇÃO GOVERNAMENTAL:</strong></p>
+      <p>A Ordo possui acordos secretos com:</p>
+      <ul>
+        <li>23 governos nacionais (incluindo Brasil, EUA, Reino Unido, França, Japão)</li>
+        <li>Agências de inteligência de 15 países</li>
+        <li>4 organizações paranormais internacionais aliadas</li>
+      </ul>
+      <p>Esses aliados fornecem cobertura oficial, acesso a recursos governamentais e proteção legal quando necessário.</p>
+      
+      <p><strong>CASOS NOTÁVEIS:</strong></p>
+      <ul>
+        <li><strong>Incidente Deus da Morte (2 anos atrás):</strong> Nível 3 - Cobertura: "Explosão de gás em prédio abandonado". 127 testemunhas tratadas com amnésticos. 43 vídeos removidos de mídias sociais. Sucesso.</li>
+        <li><strong>Surto de Lodo Vivo (2021):</strong> Nível 2 - Cobertura: "Vazamento químico industrial". 34 testemunhas. Sucesso.</li>
+        <li><strong>Aparição do Cemitério (2019):</strong> Nível 1 - Cobertura: "Névoa + imaginação". 8 testemunhas. Sucesso.</li>
+      </ul>
+      
+      <p><strong>TAXA DE SUCESSO:</strong></p>
+      <p>Protocolo Véu tem taxa de sucesso de 94% na prevenção de revelação pública em larga escala. Os 6% de falhas geralmente envolvem:</p>
+      <ul>
+        <li>Eventos grandes demais para encobrir completamente (convertidos em "lendas urbanas")</li>
+        <li>Testemunhas com plataformas muito grandes (celebridades, políticos)</li>
+        <li>Evidências físicas impossíveis de remover completamente</li>
+      </ul>
+      
+      <p><strong>DILEMA ÉTICO:</strong></p>
+      <p style="font-style: italic; background: rgba(239, 68, 68, 0.1); padding: 10px;">"Cada vez que aplicamos amnésticos, estamos violando o livre-arbítrio de alguém. Cada vez que manipulamos a verdade, nos tornamos pouco melhores que aqueles que combatemos. Mas a alternativa - deixar o mundo saber a verdade - pode ser pior. Protocolo Véu não é sobre o que é certo. É sobre o que é necessário."</p>
+      <p style="text-align: right;">- Veríssimo</p>
+      
+      <p><strong>NOTA PARA AGENTES:</strong></p>
+      <p>Você é autorizado a aplicar Protocolo Véu Nível 1 em campo sem aprovação superior. Níveis 2-4 requerem autorização. Lembre-se: Encobrimento é tão importante quanto contenção. Uma operação paranormal bem-sucedida que deixa 100 testemunhas falando é uma FALHA.</p>
+    `
+  },
 ];
