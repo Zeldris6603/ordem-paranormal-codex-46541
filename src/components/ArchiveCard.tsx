@@ -14,7 +14,7 @@ import { FileText, AlertTriangle } from "lucide-react";
 
 interface ArchiveCardProps {
   title: string;
-  type: "dossier" | "symbol" | "creature" | "artifact" | "report";
+  type: "dossier" | "symbol" | "creature" | "artifact" | "report" | "location";
   preview: string;
   content: string;
   classification?: string;
@@ -27,6 +27,7 @@ const typeStyles = {
   creature: { bg: "bg-accent/10", text: "text-accent", border: "border-accent" },
   artifact: { bg: "bg-destructive/10", text: "text-destructive", border: "border-destructive" },
   report: { bg: "bg-muted/20", text: "text-foreground", border: "border-muted" },
+  location: { bg: "bg-orange-500/10", text: "text-orange-500", border: "border-orange-500" },
 };
 
 const typeLabels = {
@@ -35,6 +36,7 @@ const typeLabels = {
   creature: "CRIATURA",
   artifact: "ARTEFATO",
   report: "RELATÓRIO",
+  location: "LOCALIZAÇÃO",
 };
 
 export const ArchiveCard = ({ title, type, preview, content, classification, imageUrl }: ArchiveCardProps) => {

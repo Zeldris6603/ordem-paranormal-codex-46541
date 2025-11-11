@@ -1,21 +1,43 @@
-import { FileText, Skull, Eye, Box, ClipboardList, Clock, Lock, UserCircle } from "lucide-react";
+import { FileText, Skull, Eye, Box, ClipboardList, Clock, Lock, UserCircle, Home } from "lucide-react";
 import { Card } from "./ui/card";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const NavigationMenu = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  const isOnHomePage = location.pathname === "/";
   
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 100; // Header height
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+    // Se não estiver na página inicial, navegar primeiro para ela
+    if (!isOnHomePage) {
+      navigate("/");
+      // Aguardar a navegação e então fazer scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const offset = 100;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
     }
   };
 
@@ -38,6 +60,17 @@ export const NavigationMenu = () => {
         <div className="mb-4 pb-3 border-b border-primary/30">
           <p className="text-xs text-primary font-terminal">&gt; NAVEGAÇÃO</p>
         </div>
+        
+        {!isOnHomePage && (
+          <button
+            onClick={() => navigate("/")}
+            className="flex items-center gap-3 w-full px-3 py-2 text-sm text-primary hover:bg-primary/20 rounded transition-all duration-300 font-courier group mb-3 border border-primary/30"
+          >
+            <Home className="h-4 w-4" />
+            <span>Voltar ao Início</span>
+          </button>
+        )}
+        
         {menuItems.map((item) => (
           <button
             key={item.id}

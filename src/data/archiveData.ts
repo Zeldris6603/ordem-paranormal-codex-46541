@@ -514,4 +514,212 @@ export const archiveItems = [
       <p><strong>RECOMENDAÇÃO:</strong> Localização e neutralização de laboratórios do Coletivo deve ser prioridade máxima.</p>
     `
   },
+
+  // LOCALIZAÇÕES
+  {
+    id: "location-hotel-cascavel",
+    title: "Hotel Cascavel",
+    type: "location" as const,
+    classification: "ZONA VERMELHA",
+    preview: "Hotel abandonado no interior de São Paulo. 47 pessoas desapareceram simultaneamente em 1987. Estrutura permanece intacta, mas vazia.",
+    content: `
+      <p><strong>LOCALIZAÇÃO:</strong> Hotel Cascavel</p>
+      <p><strong>ENDEREÇO:</strong> [REDACTED], Interior de São Paulo</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Zona Vermelha - Acesso Proibido Sem Autorização Alfa</p>
+      <p><strong>STATUS:</strong> Abandonado desde 1987</p>
+      
+      <p><strong>HISTÓRICO:</strong></p>
+      <p>O Hotel Cascavel era um estabelecimento de médio porte frequentado por famílias durante as férias. Na noite de 15 de agosto de 1987, todos os 47 hóspedes e funcionários presentes no hotel desapareceram simultaneamente. Nenhum corpo foi encontrado. Nenhum rastro de violência. As camas estavam desfeitas, alimentos ainda estavam nas mesas do restaurante, mas todas as pessoas simplesmente... sumiram.</p>
+      
+      <p><strong>DESCOBERTAS NO LOCAL:</strong></p>
+      <ul>
+        <li>Todos os relógios do hotel pararam às 3:47 da manhã</li>
+        <li>Temperaturas anormalmente baixas em todos os quartos (média de 8°C mesmo no verão)</li>
+        <li>Espelhos apresentam reflexos "atrasados" em 3-5 segundos</li>
+        <li>Gravações de áudio captam sussurros em idioma desconhecido</li>
+        <li>Quartos 47, 147 e 247 têm portas que não permanecem fechadas</li>
+      </ul>
+      
+      <p><strong>FENÔMENOS REPORTADOS:</strong></p>
+      <ul>
+        <li>Aparições de figuras humanas nas janelas (sempre às 3:47 da manhã)</li>
+        <li>Sons de festa e conversas vindos do salão de eventos vazio</li>
+        <li>Telefonemas de dentro do hotel para números próximos (linha foi desconectada há 30 anos)</li>
+        <li>Agentes relatam sensação de "serem seguidos" pelos corredores</li>
+        <li>Objetos pessoais dos hóspedes permanecem nos quartos, intocados</li>
+      </ul>
+      
+      <p><strong>TEORIA PRINCIPAL:</strong></p>
+      <p>Investigações da Ordo sugerem que o hotel foi construído sobre um ponto de convergência paranormal. Análise de registros históricos revela que o terreno era um antigo cemitério indígena. A combinação de energia residual com um ritual realizado pelo Coletivo das Sombras pode ter criado um "deslocamento temporal" - as 47 pessoas não morreram, mas foram arrancadas de nossa linha temporal.</p>
+      
+      <p><strong>ÚLTIMO INCIDENTE:</strong></p>
+      <p style="color: #ef4444;">Três agentes entraram no hotel em 2021 para investigação de rotina. Dois retornaram. O terceiro agente, Martins, foi encontrado três dias depois no quarto 247, envelhecido 20 anos e incapaz de falar. Ele repetia apenas: "Eles ainda estão lá. Eles nunca saíram. Estão presos no 15 de agosto."</p>
+      
+      <p><strong>PROTOCOLO ATUAL:</strong></p>
+      <p>Acesso proibido. Perímetro de segurança de 200 metros. Monitoramento por câmeras remotas 24/7. Qualquer movimento detectado dentro do hotel deve ser reportado imediatamente ao Conselho.</p>
+      
+      <p><strong>NOTA DE VERÍSSIMO:</strong></p>
+      <p style="font-style: italic;">"O Hotel Cascavel não é apenas assombrado. É uma ferida aberta na realidade. Cada vez que entramos lá, corremos o risco de juntar-nos às 47 pessoas. Ou talvez... elas já voltaram, mas em um presente diferente do nosso."</p>
+    `
+  },
+  {
+    id: "location-metro-fantasma",
+    title: "Metrô Linha Fantasma",
+    type: "location" as const,
+    classification: "ZONA AMARELA",
+    preview: "Estação de metrô desativada na Linha 3-Vermelha. Relatos de 'trens fantasmas' que aparecem às 2:13 da madrugada. Passageiros sombrios.",
+    content: `
+      <p><strong>LOCALIZAÇÃO:</strong> Estação [REDACTED] - Linha Fantasma</p>
+      <p><strong>LOCALIZAÇÃO:</strong> Sistema de Metrô, São Paulo - SP</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Zona Amarela - Acesso Restrito</p>
+      <p><strong>STATUS:</strong> Oficialmente desativada desde 1998</p>
+      
+      <p><strong>HISTÓRICO:</strong></p>
+      <p>Esta estação foi fechada oficialmente devido a "problemas estruturais", mas documentos internos revelam a verdadeira razão: 12 funcionários do metrô desapareceram nos túneis adjacentes em um período de 3 meses. A última operadora a desaparecer, Ana Carvalho, enviou uma mensagem de rádio antes de sumir: "Tem um trem chegando... mas não está no cronograma. Os passageiros... eles não têm rosto."</p>
+      
+      <p><strong>O TREM FANTASMA:</strong></p>
+      <p>Às 2:13 da madrugada, câmeras de segurança captam a chegada de um trem nas plataformas vazias. O trem:</p>
+      <ul>
+        <li>Não aparece nos sistemas de rastreamento</li>
+        <li>Não possui número de identificação</li>
+        <li>As janelas mostram silhuetas de passageiros, mas nenhum rosto distinguível</li>
+        <li>As portas se abrem por exatamente 47 segundos</li>
+        <li>O trem desaparece nos túneis, mas nunca é detectado em outras estações</li>
+      </ul>
+      
+      <p><strong>FENÔMENOS ASSOCIADOS:</strong></p>
+      <ul>
+        <li>Vozes ecoando nos túneis: "Próxima estação... o fim da linha..."</li>
+        <li>Correntes de ar gelado mesmo com sistema de ventilação desligado</li>
+        <li>Pegadas molhadas aparecendo espontaneamente nas plataformas (sem fonte de água)</li>
+        <li>Agentes relatam ouvir anúncios de estações que nunca existiram</li>
+        <li>Equipamentos eletrônicos apresentam interferências severas</li>
+      </ul>
+      
+      <p><strong>EXPERIMENTO DE 2019:</strong></p>
+      <p>A Ordo posicionou 3 agentes na plataforma às 2:13 da madrugada com ordem de observar, mas NÃO embarcar no trem. Quando o trem chegou, os agentes relataram:</p>
+      <p style="background: rgba(239, 68, 68, 0.1); padding: 10px; font-style: italic;">"Os passageiros estavam olhando para nós através das janelas. Não tinham olhos, mas sabíamos que estavam nos vendo. Um deles pressionou a mão contra o vidro. A mão atravessou o vidro como se fosse água. Ouvimos uma voz: 'Próxima descida: vocês.'"</p>
+      
+      <p><strong>OS DESAPARECIDOS:</strong></p>
+      <p>Investigação posterior descobriu que todas as 12 pessoas desaparecidas foram vistas pela última vez próximas à entrada da estação desativada. Testemunhas relatam que elas "pareciam estar seguindo algo" e "olhavam para a escada como se ouvissem alguém chamando".</p>
+      
+      <p><strong>CONEXÃO COM O OUTRO LADO:</strong></p>
+      <p>Santer teoriza que o trem não é uma assombração tradicional, mas sim um "transporte inter-dimensional". As pessoas que embarcam não morrem - elas são levadas para algum lugar. Mas para onde? E por quê?</p>
+      
+      <p><strong>PROTOCOLO ATUAL:</strong></p>
+      <p>Monitoramento remoto contínuo. Entrada bloqueada fisicamente com selos paranormais renovados mensalmente. Qualquer pessoa vista próxima à entrada deve ser abordada e orientada a se afastar. Se alguém entrar, NÃO perseguir. Considerar perdido.</p>
+      
+      <p><strong>NOTA PERTURBADORA:</strong></p>
+      <p style="color: #ef4444;">Recentemente, usuários comuns do metrô começaram a relatar "ver" a estação fantasma ao passar pelos túneis. Eles juram ver pessoas na plataforma, acenando. O véu está enfraquecendo.</p>
+    `
+  },
+  {
+    id: "location-cemiterio-esquecidos",
+    title: "Cemitério dos Esquecidos",
+    type: "location" as const,
+    classification: "ZONA VERMELHA",
+    preview: "Cemitério no qual túmulos aparecem e desaparecem. Nomes nas lápides mudam. Mortos que não estão mortos.",
+    content: `
+      <p><strong>LOCALIZAÇÃO:</strong> Cemitério dos Esquecidos</p>
+      <p><strong>ENDEREÇO:</strong> Zona Rural, [REDACTED], Minas Gerais</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Zona Vermelha - Extremo Perigo Cognitivo</p>
+      <p><strong>STATUS:</strong> Monitorado, mas não contido</p>
+      
+      <p><strong>HISTÓRICO:</strong></p>
+      <p>O Cemitério dos Esquecidos não tem nome oficial. Registros históricos sobre sua fundação são contraditórios - alguns documentos datam de 1823, outros de 1673, e há uma lápide com data de 2047. Sim, uma data no futuro. A lápide existe fisicamente. O nome gravado é de uma agente da Ordo que está viva e ativa.</p>
+      
+      <p><strong>ANOMALIAS DOCUMENTADAS:</strong></p>
+      <ul>
+        <li><strong>Túmulos Transitórios:</strong> Lápides aparecem e desaparecem. Um túmulo mapeado na segunda-feira pode não estar lá na terça.</li>
+        <li><strong>Nomes Mutantes:</strong> Os nomes nas lápides mudam. Uma lápide que dizia "João Silva" ontem pode dizer "Maria Santos" hoje.</li>
+        <li><strong>Datas Impossíveis:</strong> Datas de nascimento e morte que não fazem sentido (morte antes do nascimento, datas futuras, anos que não existem).</li>
+        <li><strong>Túmulos Duplicados:</strong> Mesma pessoa enterrada em 5 lugares diferentes do cemitério, com datas de morte diferentes.</li>
+        <li><strong>Sepulturas Vazias:</strong> Exumações revelam caixões vazios, mesmo em túmulos recentes com registros de enterro.</li>
+      </ul>
+      
+      <p><strong>FENÔMENO CENTRAL - OS MORTOS-VIVOS-MORTOS:</strong></p>
+      <p>O aspecto mais perturbador do cemitério é que pessoas cujos nomes aparecem nas lápides ocasionalmente "sentem" algo errado. Foram documentados 23 casos de indivíduos que:</p>
+      <ul>
+        <li>Encontraram suas próprias lápides no cemitério (mesmo estando vivos)</li>
+        <li>Começaram a ter memórias de suas "próprias mortes"</li>
+        <li>Gradualmente "esquecem" que estão vivos</li>
+        <li>Eventualmente desaparecem, e um corpo é encontrado em seu túmulo, como se sempre estivesse estado lá</li>
+      </ul>
+      
+      <p><strong>CASO DOCUMENTADO - AGENTE RODRIGUES:</strong></p>
+      <p style="background: rgba(239, 68, 68, 0.1); padding: 10px;">Em 2020, Agente Rodrigues encontrou sua lápide durante uma investigação de rotina. Data de morte: 23 de março de 2020. Ele encontrou a lápide em 18 de março de 2020. Nos dias seguintes, Rodrigues começou a ter "memórias" de um acidente de carro. No dia 22, ele estava convencido de que havia morrido. No dia 23, ele desapareceu. Seu corpo foi encontrado no túmulo, em estado de decomposição de 3 dias. A autópsia confirmou: morte por acidente de carro. Mas Rodrigues não possuía carro, e nenhum acidente foi registrado.</p>
+      
+      <p><strong>TEORIA DE SANTER:</strong></p>
+      <p>"O Cemitério dos Esquecidos não é um lugar onde os mortos descansam. É um lugar onde a morte 'procura' por suas vítimas. As lápides não marcam quem morreu - elas marcam quem VAI morrer, ou quem DEVERIA ter morrido, ou quem morreu em uma realidade alternativa. O cemitério é uma interseção de linhas temporais, e a morte não entende qual é a 'correta'."</p>
+      
+      <p><strong>O COVEIRO:</strong></p>
+      <p>Sempre há um coveiro no cemitério. Mas nunca é a mesma pessoa. Múltiplos agentes reportaram falar com "o coveiro", mas as descrições nunca batem. Jovem, velho, homem, mulher, diferentes etnias. Quando questionados, todos os "coveiros" dizem a mesma coisa: "Estou apenas cuidando dos que foram esquecidos."</p>
+      
+      <p><strong>AVISO CRÍTICO:</strong></p>
+      <p style="color: #ef4444; font-weight: bold;">NUNCA procure por seu próprio nome no cemitério. NUNCA leia os nomes nas lápides em voz alta. NUNCA aceite flores do coveiro. Se você encontrar seu nome, SAIA IMEDIATAMENTE e reporte ao Conselho. Você tem no máximo 72 horas.</p>
+      
+      <p><strong>PROTOCOLO ATUAL:</strong></p>
+      <p>Investigações permitidas apenas com equipes de 3+ agentes. Tempo máximo no local: 30 minutos. Nenhum agente deve ir sozinho. Se um membro da equipe encontrar sua lápide, extração imediata e quarentena psicológica.</p>
+    `
+  },
+  {
+    id: "location-casa-invertida",
+    title: "A Casa Invertida",
+    type: "location" as const,
+    classification: "ZONA LARANJA",
+    preview: "Residência onde a física não funciona corretamente. Gravidade opcional. Portas que levam a lugares impossíveis. Tempo não-linear.",
+    content: `
+      <p><strong>LOCALIZAÇÃO:</strong> A Casa Invertida</p>
+      <p><strong>ENDEREÇO:</strong> Rua [REDACTED], Bairro Histórico, Ouro Preto - MG</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Zona Laranja - Distorção Física Extrema</p>
+      <p><strong>STATUS:</strong> Contida, mas instável</p>
+      
+      <p><strong>HISTÓRICO:</strong></p>
+      <p>A Casa Invertida é uma residência colonial do século XVIII que pertenceu a um alquimista português chamado Baltazar Correia. Segundo registros, Baltazar estava obcecado com "inverter as leis de Deus" e conduziu experimentos proibidos no porão da casa. Em 1789, vizinhos reportaram ver a casa "girar" e ouvir gritos. Quando autoridades entraram, encontraram Baltazar morto no teto do porão - como se tivesse caído para cima.</p>
+      
+      <p><strong>ANOMALIAS FÍSICAS DOCUMENTADAS:</strong></p>
+      <ul>
+        <li><strong>Gravidade Variável:</strong> A gravidade dentro da casa muda de cômodo para cômodo. A sala de estar tem gravidade normal. A cozinha tem gravidade invertida. O quarto tem gravidade lateral.</li>
+        <li><strong>Geometria Impossível:</strong> A casa tem 4 cômodos vistos de fora, mas 9 cômodos por dentro. Um corredor leva de volta ao mesmo cômodo, mas você entra por uma porta diferente da que saiu.</li>
+        <li><strong>Portas Temporais:</strong> Abrir uma porta às 14:00 leva à cozinha. Abrir a mesma porta às 14:01 leva ao porão. Às 14:02, a porta se abre para um jardim que não existe.</li>
+        <li><strong>Escadas Paradoxais:</strong> Uma escada que sobe por 3 andares, mas termina no térreo. Impossível, mas real.</li>
+        <li><strong>Tempo Não-Linear:</strong> Relógios funcionam de trás para frente em alguns cômodos. Agentes relatam entrar às 15:00 e sair às 14:45, mas com memórias de uma hora de exploração.</li>
+      </ul>
+      
+      <p><strong>FENÔMENOS PARANORMAIS:</strong></p>
+      <ul>
+        <li>Vozes ecoando em idiomas antigos (latim, grego arcaico, algo mais velho)</li>
+        <li>Sombras que se movem contra a fonte de luz</li>
+        <li>Objetos que caem para cima ou para os lados</li>
+        <li>Reflexos em espelhos mostram cômodos diferentes dos reais</li>
+        <li>Temperatura varia de -5°C a 45°C em questão de segundos</li>
+      </ul>
+      
+      <p><strong>O PORÃO:</strong></p>
+      <p style="background: rgba(239, 68, 68, 0.1); padding: 10px;">O porão é o epicentro da anomalia. Tudo está de cabeça para baixo, incluindo móveis, objetos e... o corpo de Baltazar, ainda lá, mumificado, preso ao teto como se a gravidade fosse invertida apenas para ele. Seu diário foi encontrado ao lado do corpo. Última entrada: "Consegui. O mundo virou. Ou fui eu que virei? Não consigo mais lembrar qual é o lado certo. As paredes estão cantando. O chão é o céu. Deus perdeu este lugar."</p>
+      
+      <p><strong>EXPERIMENTO DE 2018:</strong></p>
+      <p>Um agente equipado com câmera corporal foi enviado para mapear a casa. O vídeo mostra:</p>
+      <ul>
+        <li>00:00 - Entrada pela porta da frente (gravidade normal)</li>
+        <li>03:47 - Entrada em corredor (gravidade começa a falhar, câmera fica desorientada)</li>
+        <li>07:22 - Agente está andando na parede como se fosse o chão</li>
+        <li>12:08 - Agente abre porta, revela versão do próprio corredor, mas de 5 minutos atrás (ele vê a si mesmo entrando)</li>
+        <li>15:30 - Transmissão cortada</li>
+      </ul>
+      <p>O agente foi encontrado 3 dias depois, do lado de fora da casa, sem memória dos últimos 40 minutos de gravação. Ele jurava ter ficado apenas 10 minutos dentro da casa.</p>
+      
+      <p><strong>TEORIA ATUAL:</strong></p>
+      <p>Dante, especialista em operações, acredita que Baltazar conseguiu "romper" as leis físicas locais através de algum ritual. A casa não está assombrada - ela está "quebrada". As regras da realidade não se aplicam mais lá. É como se a casa existisse em múltiplas dimensões simultaneamente.</p>
+      
+      <p><strong>RISCO DE CONTENÇÃO:</strong></p>
+      <p style="color: #ef4444;">A distorção está se expandindo. Inicialmente, apenas o interior da casa era afetado. Agora, a calçada em frente apresenta anomalias gravitacionais leves. Se não for contida, a distorção pode engolir o quarteirão inteiro... ou mais.</p>
+      
+      <p><strong>PROTOCOLO ATUAL:</strong></p>
+      <p>Entrada proibida sem aprovação de Veríssimo. Agentes devem estar ancorados com cordas de segurança. Tempo máximo dentro: 15 minutos. Nunca entrar sozinho. Se você sentir que "cima" e "baixo" não fazem mais sentido, saia imediatamente. Se você se ver em um cômodo, SAIA. Aquilo não é um reflexo.</p>
+      
+      <p><strong>NOTA DE VERÍSSIMO:</strong></p>
+      <p style="font-style: italic;">"A Casa Invertida é prova de que a realidade é mais frágil do que pensamos. Baltazar conseguiu quebrá-la com conhecimento e rituais. Se O Coletivo aprender a replicar isso... cada cidade pode se tornar uma Casa Invertida."</p>
+    `
+  },
 ];
