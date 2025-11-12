@@ -1330,4 +1330,446 @@ export const archiveItems = [
       <p>Você é autorizado a aplicar Protocolo Véu Nível 1 em campo sem aprovação superior. Níveis 2-4 requerem autorização. Lembre-se: Encobrimento é tão importante quanto contenção. Uma operação paranormal bem-sucedida que deixa 100 testemunhas falando é uma FALHA.</p>
     `
   },
+  
+  // CASOS ARQUIVADOS
+  {
+    id: "case-047",
+    title: "Caso 047: O Violinista da Praça",
+    type: "report" as const,
+    classification: "RESOLVIDO",
+    preview: "Músico de rua que hipnotizava vítimas com melodia paranormal. 23 desaparecimentos entre janeiro e março de 2019. Ceifador de Melodias banido.",
+    content: `
+      <p><strong>CASO #047 - O VIOLINISTA DA PRAÇA</strong></p>
+      <p><strong>CLASSIFICAÇÃO:</strong> RESOLVIDO</p>
+      <p><strong>DATA DO INCIDENTE:</strong> 15 de Março de 2019</p>
+      <p><strong>LOCALIZAÇÃO:</strong> Praça da República, São Paulo - SP</p>
+      <p><strong>AGENTE RESPONSÁVEL:</strong> Clara Mendes</p>
+      <p><strong>NÍVEL DE AMEAÇA:</strong> ⚠️⚠️⚠️ (Alto)</p>
+      
+      <p><strong>RESUMO DO INCIDENTE:</strong></p>
+      <p>Entre janeiro e março de 2019, 23 pessoas desapareceram na região da Praça da República. Todas as vítimas foram vistas pela última vez próximas a um músico de rua que tocava violino no local. Testemunhas relataram que a música era "impossível de ignorar" e provocava uma sensação de transe.</p>
+      
+      <p><strong>INVESTIGAÇÃO INICIAL:</strong></p>
+      <ul>
+        <li><strong>Janeiro 2019:</strong> Primeiros desaparecimentos reportados à polícia</li>
+        <li><strong>Fevereiro 2019:</strong> Padrão identificado - todas as vítimas ouviram o violinista</li>
+        <li><strong>Março 2019:</strong> Ordem Paranormal assume o caso após relatos de "música fantasmagórica"</li>
+      </ul>
+      
+      <p><strong>DESCRIÇÃO DA ENTIDADE:</strong></p>
+      <p>O violinista aparentava ter entre 30-40 anos, sempre vestido com roupas escuras e cartola. Tocava um violino antigo de madeira escura. Segundo análise posterior, tratava-se de um <strong>Ceifador de Melodias</strong> - uma entidade rara que se alimenta de emoções humanas através da música hipnótica.</p>
+      
+      <p><strong>CARACTERÍSTICAS DA MÚSICA:</strong></p>
+      <ul>
+        <li>Melodia impossível de ser reproduzida por humanos</li>
+        <li>Frequências fora do espectro normal (análise revelou sons subsônicos)</li>
+        <li>Efeito hipnótico que se intensificava a cada nota</li>
+        <li>Vítimas relatavam sensação de "estar sendo chamado para casa"</li>
+      </ul>
+      
+      <p><strong>MODUS OPERANDI:</strong></p>
+      <ol>
+        <li>Entidade toca por 15-20 minutos</li>
+        <li>Vítimas susceptíveis entram em transe</li>
+        <li>Violinista se afasta, vítimas o seguem</li>
+        <li>Desaparecem em beco próximo à Praça</li>
+        <li>Testemunhas não conseguem se lembrar de detalhes</li>
+      </ol>
+      
+      <p><strong>RESOLUÇÃO:</strong></p>
+      <p>A Agente Clara Mendes utilizou <strong>Proteção Auditiva Classe III</strong> e <strong>Amuleto de Banimento</strong> para se aproximar da entidade. Durante confronto, o violino foi destruído, quebrando o vínculo com as vítimas aprisionadas.</p>
+      
+      <p><strong>RESULTADO:</strong></p>
+      <ul>
+        <li>18 vítimas resgatadas de dimensão paralela (Limbo Musical)</li>
+        <li>5 vítimas não puderam ser recuperadas (tempo excessivo de exposição)</li>
+        <li>Entidade banida permanentemente</li>
+        <li>Violino incinerado em ritual de purificação</li>
+      </ul>
+      
+      <p><strong>VÍTIMAS RESGATADAS:</strong></p>
+      <p>As vítimas resgatadas não tinham memória do tempo que passaram desaparecidas. Terapia com amnésicos leves foi aplicada para prevenir trauma. Todas receberam cobertura de "sequestro resolvido" para familiares.</p>
+      
+      <p><strong>ARTEFATOS RECUPERADOS:</strong></p>
+      <ul>
+        <li>Fragmentos do violino (armazenados no Cofre 7-B)</li>
+        <li>Partituras manuscritas encontradas no covil da entidade</li>
+        <li>23 objetos pessoais das vítimas</li>
+      </ul>
+      
+      <p><strong>PROTOCOLO APLICADO:</strong></p>
+      <p>Protocolo Véu ativado - evento encoberto como ação de quadrilha de sequestros. Mídia noticiou "grande operação policial resgata vítimas de tráfico humano".</p>
+      
+      <p><strong>LIÇÕES APRENDIDAS:</strong></p>
+      <p>Entidades que usam som como arma exigem proteção especializada. Recomendação: todos os agentes devem portar proteção auditiva de emergência.</p>
+      
+      <p style="font-style: italic; color: #8b5cf6;">"A música pode tocar a alma... mas algumas melodias devoram."</p>
+      <p style="text-align: right; color: #8b5cf6;">- Agente Clara Mendes</p>
+      
+      <p><strong>STATUS:</strong> ARQUIVADO - Ameaça eliminada</p>
+    `
+  },
+  {
+    id: "case-128",
+    title: "Caso 128: Epidemia de Sonhos",
+    type: "report" as const,
+    classification: "EM MONITORAMENTO",
+    preview: "Cidade inteira teve o mesmo pesadelo simultaneamente. 47.000 pessoas afetadas. Possível conexão com Convergência Final. Evento pode se repetir.",
+    content: `
+      <p><strong>CASO #128 - EPIDEMIA DE SONHOS</strong></p>
+      <p><strong>CLASSIFICAÇÃO:</strong> EM MONITORAMENTO</p>
+      <p><strong>DATA DO INCIDENTE:</strong> 21 de Julho de 2020</p>
+      <p><strong>LOCALIZAÇÃO:</strong> Petrópolis - RJ</p>
+      <p><strong>AGENTE RESPONSÁVEL:</strong> Dr. Roberto Andrade</p>
+      <p><strong>NÍVEL DE AMEAÇA:</strong> ⚠️⚠️⚠️⚠️ (Crítico)</p>
+      
+      <p><strong>RESUMO DO INCIDENTE:</strong></p>
+      <p>Na noite de 20 para 21 de julho de 2020, aproximadamente 47.000 habitantes de Petrópolis (93% da população) relataram ter tido exatamente o mesmo pesadelo. O fenômeno ocorreu simultaneamente e afetou pessoas de todas as idades, incluindo bebês que acordaram chorando no mesmo horário.</p>
+      
+      <p><strong>O PESADELO:</strong></p>
+      <p>Todas as vítimas descreveram a mesma sequência de eventos:</p>
+      <ol>
+        <li><strong>Início:</strong> Acordar em suas próprias camas, mas a cidade estava vazia</li>
+        <li><strong>Desenvolvimento:</strong> Caminhar pelas ruas desertas enquanto o sol se põe</li>
+        <li><strong>Clímax:</strong> Chegada à Catedral de São Pedro de Alcântara</li>
+        <li><strong>Terror:</strong> Uma figura de sombra sem rosto espera no altar</li>
+        <li><strong>Despertar:</strong> A figura fala um nome (diferente para cada pessoa) e todos acordam</li>
+      </ol>
+      
+      <p><strong>CARACTERÍSTICAS ANÔMALAS:</strong></p>
+      <ul>
+        <li>Sincronia perfeita - todos acordaram às 03:47 AM</li>
+        <li>Detalhes idênticos apesar de diferentes perspectivas</li>
+        <li>Sonho durou exatamente 23 minutos para todos</li>
+        <li>Crianças pequenas desenharam os mesmos símbolos ao descrever o sonho</li>
+        <li>Animais domésticos apresentaram comportamento agitado no mesmo horário</li>
+      </ul>
+      
+      <p><strong>HIPÓTESES INVESTIGADAS:</strong></p>
+      
+      <p><strong>HIPÓTESE 1 - Contaminação Psíquica:</strong></p>
+      <p>Entidade telepática de grande poder broadcasting o mesmo sonho para toda a população. Análise de energia paranormal detectou pico anômalo às 03:47 AM.</p>
+      
+      <p><strong>HIPÓTESE 2 - Memória Coletiva:</strong></p>
+      <p>Evento traumático do passado da cidade sendo "revivido" através do inconsciente coletivo. Pesquisa histórica revelou: em 1847, epidemia de febre amarela matou 47% da população. Último registro antes da quarentena foi às 03:47 AM.</p>
+      
+      <p><strong>HIPÓTESE 3 - Teste de Entidade Superior:</strong></p>
+      <p>O pesadelo pode ter sido um "mapeamento" de consciências humanas por entidade desconhecida, possivelmente preparando para evento futuro.</p>
+      
+      <p><strong>EVIDÊNCIAS FÍSICAS:</strong></p>
+      <ul>
+        <li>Registros de sismógrafos mostraram vibração inexplicável às 03:47 AM</li>
+        <li>Câmeras de segurança da Catedral captaram anomalia luminosa</li>
+        <li>12 pessoas entraram em coma durante o sonho (3 permanecem em estado vegetativo)</li>
+        <li>Símbolos encontrados desenhados por crianças correspondem a escrita proto-humana</li>
+      </ul>
+      
+      <p><strong>TESTEMUNHOS NOTÁVEIS:</strong></p>
+      
+      <p><strong>Padre Augusto Silva (Catedral):</strong></p>
+      <p style="font-style: italic;">"Senti uma presença maligna na igreja naquela noite. As velas apagaram sozinhas às 03:47. Rezei até o amanhecer."</p>
+      
+      <p><strong>Dra. Lívia Costa (Hospital):</strong></p>
+      <p style="font-style: italic;">"Nunca vi nada assim em 30 anos de medicina. Pacientes em UTI, sedados, tiveram os mesmos sinais vitais alterados no mesmo momento. Como se algo os estivesse... procurando."</p>
+      
+      <p><strong>Miguel Santos (8 anos):</strong></p>
+      <p style="font-style: italic; color: #ef4444;">"O homem de sombra disse que ia voltar. Ele sabe meu nome."</p>
+      
+      <p><strong>DESDOBRAMENTOS:</strong></p>
+      <ul>
+        <li><strong>Semana 1:</strong> Pânico generalizado, êxodo de 3.000 pessoas da cidade</li>
+        <li><strong>Semana 2:</strong> Protocolo Véu ativado - evento explicado como "efeito psicológico de pânico em massa"</li>
+        <li><strong>Mês 1:</strong> 127 relatos de novos pesadelos individuais</li>
+        <li><strong>Mês 6:</strong> 8 tentativas de suicídio relacionadas a "medo do retorno"</li>
+      </ul>
+      
+      <p><strong>MEDIDAS DE CONTENÇÃO:</strong></p>
+      <ul>
+        <li>Posto de monitoramento permanente instalado em Petrópolis</li>
+        <li>15 agentes encobertos vivendo na cidade</li>
+        <li>Sistema de alerta precoce para anomalias oníricas</li>
+        <li>Terapia em grupo para afetados (disfarçada como programa de saúde mental)</li>
+      </ul>
+      
+      <p><strong>STATUS ATUAL:</strong></p>
+      <p>Nenhum evento semelhante foi registrado desde julho de 2020. No entanto, a cada 21 de julho, aproximadamente 30% dos afetados originais relatam ansiedade extrema e dificuldade para dormir.</p>
+      
+      <p><strong>PREVISÃO:</strong></p>
+      <p>Modelos preditivos sugerem 67% de chance de repetição do fenômeno. Possível conexão com a Convergência Final mencionada em profecias antigas.</p>
+      
+      <p style="font-style: italic; color: #8b5cf6;">"Quando uma cidade inteira sonha o mesmo sonho, não é coincidência. É um convite... ou um aviso."</p>
+      <p style="text-align: right; color: #8b5cf6;">- Dr. Roberto Andrade</p>
+      
+      <p><strong>STATUS:</strong> EM MONITORAMENTO ATIVO - Reavaliação trimestral obrigatória</p>
+    `
+  },
+  {
+    id: "case-199",
+    title: "Caso 199: A Criança que Não Envelhece",
+    type: "report" as const,
+    classification: "ATIVO",
+    preview: "Pedro Almeida, 48 anos cronológicos, aparência de 8 anos. Anomalia Temporal Tipo III. Envelhecimento cessou completamente em 1984.",
+    content: `
+      <p><strong>CASO #199 - A CRIANÇA QUE NÃO ENVELHECE</strong></p>
+      <p><strong>CLASSIFICAÇÃO:</strong> ATIVO</p>
+      <p><strong>DATA DO INCIDENTE INICIAL:</strong> 12 de Agosto de 1984</p>
+      <p><strong>LOCALIZAÇÃO:</strong> Belo Horizonte - MG</p>
+      <p><strong>AGENTE RESPONSÁVEL:</strong> Dante Moura (Atual)</p>
+      <p><strong>NÍVEL DE AMEAÇA:</strong> ⚠️⚠️ (Moderado - Anomalia Benigna)</p>
+      
+      <p><strong>RESUMO:</strong></p>
+      <p>Pedro Henrique Almeida nasceu em 12 de agosto de 1976. Em seu 8º aniversário, seu envelhecimento biológico cessou completamente. Hoje, aos 48 anos cronológicos, Pedro ainda possui a aparência física, mental e emocional de uma criança de 8 anos.</p>
+      
+      <p><strong>DESCOBERTA:</strong></p>
+      <p>O caso chegou à atenção da Ordem em 1992, quando Pedro deveria ter 16 anos mas permanecia com aparência de 8. Família procurou incontáveis médicos, todos sem explicação. Investigação inicial classificou como "Anomalia Temporal Tipo III".</p>
+      
+      <p><strong>CARACTERÍSTICAS DA ANOMALIA:</strong></p>
+      
+      <p><strong>FÍSICAS:</strong></p>
+      <ul>
+        <li>Altura: 1,28m (inalterada desde 1984)</li>
+        <li>Peso: 27kg (flutuação normal de ±1kg)</li>
+        <li>Desenvolvimento: Parado exatamente no momento do 8º aniversário</li>
+        <li>DNA: Mostra idade cronológica de 48 anos apesar da aparência</li>
+        <li>Telômeros: Não apresentam encurtamento desde 1984</li>
+      </ul>
+      
+      <p><strong>MENTAIS:</strong></p>
+      <ul>
+        <li>Capacidade cognitiva de criança de 8 anos</li>
+        <li>Memórias de 48 anos armazenadas, mas processadas com mente infantil</li>
+        <li>Consciência da própria condição causa frustração constante</li>
+        <li>QI: 95 (normal, mas processamento infantil)</li>
+      </ul>
+      
+      <p><strong>PSICOLÓGICAS:</strong></p>
+      <ul>
+        <li>Depressão crônica (tratamento adaptado para criança)</li>
+        <li>Solidão extrema (não pertence a nenhuma faixa etária)</li>
+        <li>Momentos de sabedoria surpreendente intercalados com birras infantis</li>
+      </ul>
+      
+      <p><strong>TENTATIVAS DE REVERSÃO:</strong></p>
+      <ul>
+        <li><strong>1984-1990:</strong> Tratamentos médicos convencionais (sem resultado)</li>
+        <li><strong>1992:</strong> Primeira intervenção da Ordem - Ritual de Aceleração Temporal (falhou)</li>
+        <li><strong>1998:</strong> Exposição controlada a Artefato do Tempo (sem efeito)</li>
+        <li><strong>2005:</strong> Tentativa de transferência para linha temporal alternativa (recusada pelo Conselho)</li>
+        <li><strong>2015:</strong> Consulta com entidade temporal (resposta: "O Tempo o esqueceu")</li>
+        <li><strong>2023:</strong> Última avaliação - anomalia irreversível</li>
+      </ul>
+      
+      <p><strong>TEORIAS SOBRE A ORIGEM:</strong></p>
+      
+      <p><strong>TEORIA A - Maldição Familiar:</strong></p>
+      <p>Investigação genealógica revelou que trisavó de Pedro era curandeira acusada de bruxaria em 1890. Registros indicam que ela foi queimada viva aos 8 anos de idade. Possível maldição geracional.</p>
+      
+      <p><strong>TEORIA B - Evento de Aniversário:</strong></p>
+      <p>Na festa de 8 anos, Pedro apagou velas de bolo e fez um pedido. Segundo testemunhas, ele disse: <em>"Queria que esse dia nunca terminasse."</em> Às 23:47, todas as luzes da casa piscaram. Pedro nunca mais envelheceu.</p>
+      
+      <p><strong>TEORIA C - Anomalia Espacial:</strong></p>
+      <p>Casa onde Pedro morava em 1984 foi construída sobre antigo cemitério indígena. Possível zona de distorção temporal natural.</p>
+      
+      <p><strong>ROTINA ATUAL (2024):</strong></p>
+      <p>Pedro vive em residência monitorada pela Ordem em Belo Horizonte. Recebe educação especializada e acompanhamento psicológico.</p>
+      
+      <p><strong>Dia típico:</strong></p>
+      <ul>
+        <li>07:00: Acorda (dorme no quarto decorado para criança)</li>
+        <li>08:00: Café da manhã com cuidadora</li>
+        <li>09:00: Aulas particulares (conteúdo adaptado)</li>
+        <li>12:00: Almoço + brincadeiras</li>
+        <li>14:00: Terapia (3x por semana)</li>
+        <li>15:00: Atividades recreativas supervisionadas</li>
+        <li>19:00: Jantar</li>
+        <li>20:30: Rotina de sono (adora história antes de dormir)</li>
+      </ul>
+      
+      <p><strong>CITAÇÕES DE PEDRO:</strong></p>
+      
+      <p style="font-style: italic; color: #fbbf24;">"Eu lembro quando minha irmã era menor que eu. Agora ela tem cabelo branco. Eu ainda não perdi nenhum dente de leite."</p>
+      
+      <p style="font-style: italic; color: #fbbf24;">"As crianças na escola me chamam de baixinho. Mas eu sou mais velho que a professora."</p>
+      
+      <p style="font-style: italic; color: #ef4444;">"Às vezes eu esqueço que sou velho. Daí eu vejo foto da minha mãe e lembro que ela já morreu. Aí eu choro, mas ninguém leva a sério porque eu choro como criança."</p>
+      
+      <p><strong>DILEMA ÉTICO:</strong></p>
+      <p>O Conselho da Ordem debate periodicamente se devem continuar tentando reverter a condição ou focar em dar qualidade de vida a Pedro. Alguns argumentam que forçar o envelhecimento agora seria como "matar" a criança que Pedro é.</p>
+      
+      <p><strong>VALOR CIENTÍFICO:</strong></p>
+      <p>Caso 199 é único na história da Ordem. Estudo de Pedro contribuiu para compreensão de anomalias temporais e envelhecimento paranormal. Dados coletados ao longo de 40 anos são inestimáveis.</p>
+      
+      <p><strong>ESPERANÇA:</strong></p>
+      <p>A Ordem continua buscando solução. Recente descoberta de Manuscrito Temporal sugere possível reversão usando Eclipse Triplo (próximo em 2048).</p>
+      
+      <p style="font-style: italic; color: #8b5cf6;">"Pedro não é uma criança e não é um adulto. Ele é um homem de 48 anos preso em um corpo e mente de 8. E todos os dias, ele acorda lembrando de mais um dia que não viveu plenamente."</p>
+      <p style="text-align: right; color: #8b5cf6;">- Dante Moura</p>
+      
+      <p><strong>STATUS:</strong> ATIVO - Monitoramento contínuo / Pesquisa de reversão em andamento</p>
+    `
+  },
+  {
+    id: "case-242",
+    title: "Caso 242: O Espelho de Buenos Aires",
+    type: "report" as const,
+    classification: "PERDA TOTAL",
+    preview: "Espelho premonitório que mostrava o futuro. Tentativa de contenção resultou em 8 mortes e destruição do artefato. Visões apontavam para Convergência Final.",
+    content: `
+      <p><strong>CASO #242 - O ESPELHO DE BUENOS AIRES</strong></p>
+      <p><strong>CLASSIFICAÇÃO:</strong> PERDA TOTAL</p>
+      <p><strong>DATA DO INCIDENTE:</strong> 03 de Novembro de 2021</p>
+      <p><strong>LOCALIZAÇÃO:</strong> Buenos Aires, Argentina (Cooperação Internacional)</p>
+      <p><strong>AGENTE RESPONSÁVEL:</strong> Isabella Cortez (Argentina) + Suporte Ordem Brasil</p>
+      <p><strong>NÍVEL DE AMEAÇA:</strong> ⚠️⚠️⚠️⚠️⚠️ (Cataclísmico - Artefato Destruído)</p>
+      
+      <p><strong>RESUMO DO INCIDENTE:</strong></p>
+      <p>Um espelho ornamentado do século XVIII foi descoberto em leilão de antiguidades em Buenos Aires. O artefato possuía a capacidade de mostrar o futuro de quem olhasse para ele. Tentativa de contenção resultou em 8 mortes, 23 feridos e destruição do artefato.</p>
+      
+      <p><strong>DESCRIÇÃO DO ARTEFATO:</strong></p>
+      
+      <p><strong>Características Físicas:</strong></p>
+      <ul>
+        <li>Espelho oval de 2,1m x 1,3m</li>
+        <li>Moldura de ébano entalhada com símbolos alquímicos</li>
+        <li>Superfície reflexiva de prata negra (composição anômala)</li>
+        <li>Peso: 89kg (densidade impossível para materiais conhecidos)</li>
+        <li>Origem: França, 1764 (atribuído ao alquimista Claude Dumont)</li>
+      </ul>
+      
+      <p><strong>Propriedades Paranormais:</strong></p>
+      <ul>
+        <li>Mostrava o futuro de quem olhasse (24h a 30 anos à frente)</li>
+        <li>Imagens variavam de claras a simbólicas</li>
+        <li>Tempo de visão: 3-8 segundos</li>
+        <li>Impossível de fotografar (câmeras captavam apenas reflexo normal)</li>
+        <li>Efeito aumentava em intensidade a cada uso</li>
+      </ul>
+      
+      <p><strong>HISTÓRICO DO ESPELHO:</strong></p>
+      <ul>
+        <li><strong>1764:</strong> Criação por Claude Dumont, alquimista da corte francesa</li>
+        <li><strong>1765:</strong> Dumont enlouquece após olhar o espelho, suicida-se dias depois</li>
+        <li><strong>1789:</strong> Espelho desaparece durante Revolução Francesa</li>
+        <li><strong>1823:</strong> Reaparece em Madrid - 3 mortes relacionadas</li>
+        <li><strong>1891:</strong> Encontrado em mansão abandonada em Lisboa</li>
+        <li><strong>1943:</strong> Registros indicam presença na Alemanha Nazi (uso não confirmado)</li>
+        <li><strong>1978:</strong> Vendido em leilão em Londres</li>
+        <li><strong>2021:</strong> Ressurge em Buenos Aires</li>
+      </ul>
+      
+      <p><strong>O INCIDENTE - 03/11/2021:</strong></p>
+      <ul>
+        <li><strong>09:00:</strong> Equipe de 12 agentes chega ao local para contenção</li>
+        <li><strong>09:45:</strong> Decisão de transportar espelho coberto (sem olhar)</li>
+        <li><strong>10:12:</strong> Durante transporte, lona de proteção se rasga</li>
+        <li><strong>10:13:</strong> Agente Marcus Valente olha acidentalmente para o espelho</li>
+      </ul>
+      
+      <p><strong>O QUE MARCUS VIU:</strong></p>
+      <p style="color: #ef4444;">Marcus congelou, olhos arregalados. Começou a gritar: "NÃO! NÃO PODE SER! TODOS MORREM! A CONVERGÊNCIA... ELE VEM!"</p>
+      
+      <p>Tentou destruir o espelho com bastão de contenção. Outros agentes intervieram. No caos, 6 pessoas olharam para o espelho.</p>
+      
+      <p><strong>REAÇÕES DAS VÍTIMAS:</strong></p>
+      <ul>
+        <li><strong>Marcus Valente:</strong> Tentou se matar (contido, sedado)</li>
+        <li><strong>Ana Torres:</strong> Desmaiou, coma por 3 dias</li>
+        <li><strong>Roberto Dias:</strong> Começou a rir histericamente, não parou por 8 horas</li>
+        <li><strong>Lucia Fernandez:</strong> Sussurrava "07/12/2021... 07/12/2021..." repetidamente</li>
+        <li><strong>Diego Santos:</strong> Ficou catatônico por 2 semanas</li>
+        <li><strong>Camila Rios:</strong> Não apresentou reação imediata</li>
+      </ul>
+      
+      <p><strong>A EXPLOSÃO:</strong></p>
+      <p>Ao ser atingido, o espelho explodiu em energia paranormal pura. Onda de choque temporal atingiu raio de 200m:</p>
+      <ul>
+        <li>8 mortes instantâneas (3 agentes, 5 civis)</li>
+        <li>23 feridos com queimaduras temporais</li>
+        <li>Fragmentos do espelho desintegraram-se</li>
+        <li>Área afetada sofreu distorção temporal de 3 minutos</li>
+      </ul>
+      
+      <p><strong>Vítimas da explosão reportaram:</strong></p>
+      <ul>
+        <li>Ver múltiplas versões de si mesmas</li>
+        <li>Envelhecer e rejuvenescer simultaneamente</li>
+        <li>Ouvir ecos de conversas futuras</li>
+        <li>Sentir dor de eventos que ainda não aconteceram</li>
+      </ul>
+      
+      <p><strong>CONSEQUÊNCIAS A LONGO PRAZO:</strong></p>
+      
+      <p><strong>Marcus Valente:</strong></p>
+      <ul>
+        <li>Desenvolveu precognição involuntária (visões aleatórias do futuro)</li>
+        <li>Aposentadoria médica em 2022</li>
+        <li>Monitora constantemente a data: 07/12/2021</li>
+      </ul>
+      
+      <p><strong>Ana Torres:</strong></p>
+      <ul>
+        <li>Após despertar, possuía conhecimento de eventos futuros menores</li>
+        <li>Previu 12 incidentes corretamente (2021-2023)</li>
+        <li>Atualmente consultora da Ordem para previsões</li>
+      </ul>
+      
+      <p><strong>Lucia Fernandez:</strong></p>
+      <p style="color: #ef4444;">Em 07/12/2021, sofreu ataque cardíaco e faleceu. Exatamente como ela previra. Autópsia não revelou causa paranormal.</p>
+      
+      <p><strong>Camila Rios:</strong></p>
+      <ul>
+        <li>Aparentemente não afetada até 15/11/2021</li>
+        <li>Desapareceu deixando bilhete: <em>"Vi onde preciso estar. Obrigada."</em></li>
+        <li>Nunca mais foi encontrada</li>
+      </ul>
+      
+      <p><strong>O QUE ELES VIRAM:</strong></p>
+      <p>Ordem Argentina conduziu 47 sessões de terapia e debriefing. Fragmentos do futuro vistos:</p>
+      <ul>
+        <li>Evento cataclísmico chamado "A Convergência"</li>
+        <li>Uma entidade massiva emergindo</li>
+        <li>Morte em massa em escala global</li>
+        <li>Data aproximada: 2025-2027</li>
+        <li>Símbolo recorrente: Círculo partido com sete pontas</li>
+      </ul>
+      
+      <p><strong>LIÇÕES APRENDIDAS:</strong></p>
+      <ul>
+        <li>Protocolo atualizado: Artefatos de previsão devem ser mantidos cobertos SEMPRE</li>
+        <li>Contenção deve ser feita por agentes com Treinamento Anti-Cognitivo</li>
+        <li>Destruição de artefatos precisa de análise de risco detalhada</li>
+        <li>Vítimas de visões futuras precisam de acompanhamento vitalício</li>
+      </ul>
+      
+      <p><strong>ARTEFATOS RELACIONADOS:</strong></p>
+      <p>Pesquisa revelou existência de 4 outros Espelhos Premonitórios:</p>
+      <ul>
+        <li>Espelho de Veneza (paradeiro desconhecido)</li>
+        <li>Espelho de Praga (em posse do Coletivo das Sombras)</li>
+        <li>Espelho de Cairo (destruído em 1899)</li>
+        <li>Espelho de Kyoto (contido por ordem japonesa)</li>
+      </ul>
+      
+      <p><strong>CONEXÃO COM CASOS ANTERIORES:</strong></p>
+      <p>Visões do Espelho mencionam:</p>
+      <ul>
+        <li>A Convergência Final (Profecia dos Sete Selos)</li>
+        <li>Data similar a previsões do Caso 128 (Epidemia de Sonhos)</li>
+        <li>Entidade descrita corresponde a lendas sobre "O Que Espera"</li>
+      </ul>
+      
+      <p><strong>MEMORIAL:</strong></p>
+      <p>8 pessoas morreram no Incidente do Espelho. Ordem Internacional prestou homenagem em cerimônia privada. Famílias receberam pensão e versão oficial de "acidente em serviço".</p>
+      
+      <p style="font-style: italic; color: #8b5cf6;">"O futuro não deve ser visto. Há uma razão pela qual caminhamos com os olhos voltados para frente, não para dentro do espelho."</p>
+      <p style="text-align: right; color: #8b5cf6;">- Isabella Cortez</p>
+      
+      <p style="font-style: italic; color: #ef4444; margin-top: 20px;">"Marcus ainda me liga às 3h da manhã, gritando sobre coisas que ainda não aconteceram. Parte de mim deseja que tivéssemos deixado aquele maldito espelho no leilão."</p>
+      <p style="text-align: right; color: #ef4444;">- Isabella Cortez, Relatório Confidencial</p>
+      
+      <p><strong>STATUS:</strong> PERDA TOTAL - Artefato destruído / Monitoramento de afetados em andamento</p>
+      
+      <p style="background: rgba(239, 68, 68, 0.1); padding: 15px; margin-top: 20px;"><strong>NOTA ESPECIAL:</strong> Este caso foi apresentado ao Conselho Internacional como evidência da necessidade de preparação para evento de larga escala previsto para 2025-2027. Recomendação: ativação de protocolos de contenção global preventiva.</p>
+    `
+  },
 ];
