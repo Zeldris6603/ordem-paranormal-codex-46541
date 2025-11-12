@@ -72,6 +72,10 @@ All colors MUST be HSL.
     animation: fadeIn 1s ease-in forwards;
   }
 
+  .opacity-1 {
+    opacity: 1;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;

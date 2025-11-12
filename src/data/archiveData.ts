@@ -1772,4 +1772,622 @@ export const archiveItems = [
       <p style="background: rgba(239, 68, 68, 0.1); padding: 15px; margin-top: 20px;"><strong>NOTA ESPECIAL:</strong> Este caso foi apresentado ao Conselho Internacional como evidência da necessidade de preparação para evento de larga escala previsto para 2025-2027. Recomendação: ativação de protocolos de contenção global preventiva.</p>
     `
   },
+
+  // NOVAS CRIATURAS
+  {
+    id: "creature-copiadores",
+    title: "Os Copiadores",
+    type: "creature" as const,
+    classification: "CLASSE COGNITIVA EXTREMA",
+    preview: "Entidades que absorvem e replicam identidades. Vítimas perdem consciência gradualmente. Altamente perigosas em grupos.",
+    content: `
+      <p><strong>DESIGNAÇÃO:</strong> Os Copiadores (Anomalia-447)</p>
+      <p><strong>APARÊNCIA:</strong> Humanóides translúcidos com características que variam constantemente. Sem feições fixas. Altura média de 1,70m. Pele aparenta ser feita de vidro fosco que reflete distorcidamente.</p>
+      <p><strong>COMPORTAMENTO:</strong></p>
+      <ul>
+        <li>Operam em grupos de 3-7 indivíduos</li>
+        <li>Cercam a vítima em padrão circular</li>
+        <li>Imitam movimentos e fala da vítima com atraso de 2-3 segundos</li>
+        <li>Aproximação gradual do alvo</li>
+        <li>Demonstram inteligência cooperativa refinada</li>
+      </ul>
+      <p><strong>MECANISMO DE ATAQUE:</strong></p>
+      <p>Os Copiadores não atacam fisicamente. Em vez disso, eles absorvem a "essência" da vítima através de contato prolongado:</p>
+      <ul>
+        <li><strong>Estágio 1 (0-5 minutos):</strong> Vítima começa a ver "reflexo" em cada Copiador</li>
+        <li><strong>Estágio 2 (5-15 minutos):</strong> Reflexos se tornam cada vez mais precisos. Vítima começar a questionar qual é seu "verdadeiro eu"</li>
+        <li><strong>Estágio 3 (15-30 minutos):</strong> Vítima perde capacidade de distinguir entre si mesma e os Copiadores. Catatonia parcial.</li>
+        <li><strong>Estágio 4 (30+ minutos):</strong> Copiadores ganham completo domínio. Vítima permanece como "casca vazia". Corpo pode ser controlado pelo grupo.</li>
+      </ul>
+      <p><strong>MANIFESTAÇÕES CONHECIDAS:</strong></p>
+      <ul>
+        <li>2015 - Incidente em Academia de Polícia: 3 recrutas se tornaram cópias perfeitas</li>
+        <li>2019 - Infiltração em empresa de tecnologia: 7 funcionários absorvidos</li>
+        <li>2023 - Manifestação isolada em Brasília (contida antes de propagação)</li>
+      </ul>
+      <p><strong>PERIGOS CRÍTICOS:</strong></p>
+      <ul>
+        <li>Vítimas absorvidas parecem completamente normais externamente</li>
+        <li>Podem infiltrar-se em posições de confiança</li>
+        <li>Grupo de Copiadores pode coordenar múltiplas vítimas como marionetes</li>
+        <li>Possível objetivo: Infiltração em estruturas de poder</li>
+      </ul>
+      <p><strong>CONTRAMEDIDAS:</strong></p>
+      <ul>
+        <li>Uso de espelhos antigos (cobre, não vidro moderno) desorientam Copiadores</li>
+        <li>Luz ultravioleta exposição prolongada causa desordem temporária</li>
+        <li>Separação física imediata das vítimas e dos Copiadores</li>
+        <li>Verificação de identidade: Perguntas sobre memórias pessoais profundas</li>
+      </ul>
+      <p><strong>NOTA CRÍTICA:</strong> O Coletivo das Sombras pode estar usando Copiadores como infiltradores. Suspeita-se que 2-3 agentes da Ordem possam estar comprometidos. Protocolo de verificação de identidade expandido foi implementado.</p>
+    `
+  },
+  {
+    id: "creature-nevoa-cinzenta",
+    title: "Névoa Cinzenta",
+    type: "creature" as const,
+    classification: "CLASSE AMBIENTAL",
+    preview: "Entidade gasosa que consome memórias. Deixa vítimas em estado catatônico sem recordações. Espalha-se através do ar.",
+    content: `
+      <p><strong>DESIGNAÇÃO:</strong> Névoa Cinzenta (Anomalia-516)</p>
+      <p><strong>APARÊNCIA:</strong> Nuvem densa de cor cinzenta-pérola. Temperatura local cai 15-20°C em sua presença. Emite odor de terra molhada e metal enferrujado. Movimento lento e fluido, como se tivesse "vontade".</p>
+      <p><strong>PADRÃO DE EXPANSÃO:</strong></p>
+      <ul>
+        <li>Começa em ponto focal (normalmente local de trauma emocional coletivo)</li>
+        <li>Expande-se a aproximadamente 5 metros por hora</li>
+        <li>Pode atravessar frestas e pequenas aberturas</li>
+        <li>Sensível a correntes de ar forte (pode ser "dispersada")</li>
+        <li>Regenera-se se não totalmente eliminada</li>
+      </ul>
+      <p><strong>EFEITOS SOBRE VÍTIMAS:</strong></p>
+      <ul>
+        <li>Exposição a 30 segundos: Perda de memórias da última semana</li>
+        <li>Exposição a 5 minutos: Perda de memórias do último ano</li>
+        <li>Exposição a 15 minutos: Perda de 50% das memórias pessoais</li>
+        <li>Exposição a 30+ minutos: Amnésia quase total. Vítima reverte a estado vegetativo</li>
+      </ul>
+      <p><strong>CASOS DOCUMENTADOS:</strong></p>
+      <p><strong>Caso Clínico #1 - Hospital Psiquiátrico (2020):</strong></p>
+      <p>Névoa manifestou-se em ala de internação. 23 pacientes expostos. Após recuperação, nenhum conseguia se lembrar de seu próprio nome ou da família. Permaneceram em estado catatônico. Alguns faleceram sem recuperação de consciência.</p>
+      <p><strong>Caso Clínico #2 - Estação de Metrô (2022):</strong></p>
+      <p>Manifestação durante horário de pico. 80+ pessoas expostas por tempo variado. Aqueles com exposição breve recuperaram memórias em 3-4 dias. 12 pessoas que inhalaram diretamente permanecem hospitalizadas sem recuperação de identidade.</p>
+      <p><strong>TEORIA DE ORIGEM:</strong></p>
+      <p>Névoa Cinzenta pode ser manifestação de "memória coletiva negativa" - trauma acumulado de um lugar transmutado em entidade paranormal. Frequentemente aparece em locais de massacre, hospitais psiquiátricos ou presídios com história de abuso.</p>
+      <p><strong>CONTRAMEDIDAS:</strong></p>
+      <ul>
+        <li>Máscaras respiratórias especializadas (filtros de prata coloidal)</li>
+        <li>Aquecimento extremo (calor acima de 60°C dispersa temporariamente)</li>
+        <li>Ventilação artificial e dispersão ao ar livre</li>
+        <li>Rituais de purificação para "liberar" memórias presas</li>
+      </ul>
+      <p><strong>AVISO:</strong> Não há cura confirmada para amnésia causada por exposição prolongada a Névoa. Vítimas não recuperam memórias naturalmente. Pesquisa em curso para determinar se memórias poderiam ser recuperadas através de rituais especiais.</p>
+    `
+  },
+  {
+    id: "creature-colecionador",
+    title: "O Colecionador",
+    type: "creature" as const,
+    classification: "CLASSE ENTIDADE SOLITÁRIA",
+    preview: "Ser que coleciona objetos e pessoas de valor paranormal. Dimensão de bolso. Imunidade a contenção convencional.",
+    content: `
+      <p><strong>DESIGNAÇÃO:</strong> O Colecionador (Anomalia-724)</p>
+      <p><strong>APARÊNCIA:</strong> Humanóide alto (aproximadamente 2,3m) com aparência vagamente humana. Pele de textura irregular, como couro antigo. Olhos brilham intensamente. Veste casaco comprido feito de material desconhecido. Carrega consigo uma mochila impossível (dimensões internas muito maiores que externas).</p>
+      <p><strong>PADRÃO DE COMPORTAMENTO:</strong></p>
+      <ul>
+        <li>Viaja constantemente entre localizações</li>
+        <li>Busca ativamente itens de "valor paranormal"</li>
+        <li>Também coleciona indivíduos especiais (normalmente com potencial sobrenatural)</li>
+        <li>Não demonstra hostilidade imediata, mas extremamente perigoso se contrariado</li>
+        <li>Parece coletar itens e pessoas para propósito desconhecido</li>
+      </ul>
+      <p><strong>O MÉTODO:</strong></p>
+      <p>O Colecionador raramente usa força. Em vez disso:</p>
+      <ol>
+        <li>Identifica alvo desejado (artefato, grimório, pessoa com dom paranormal)</li>
+        <li>Negocia ou oferece "troca" - sempre oferece algo "de valor equivalente"</li>
+        <li>Se recusado, pode se tornar persistente (segue a vítima)</li>
+        <li>Se conseguir o que deseja, desaparece de forma tão súbita que é impossível rastreá-lo</li>
+      </ol>
+      <p><strong>COLEÇÃO CONHECIDA:</strong></p>
+      <p>Investigação revelou que O Colecionador possui pelo menos:</p>
+      <ul>
+        <li>15+ artefatos paranormais de classe alta</li>
+        <li>3 grimórios antigos de origem desconhecida</li>
+        <li>12+ indivíduos que desapareceram "voluntariamente" com ele</li>
+        <li>Possível posse de Lanterna de Ferro Negro (perdida em 2015)</li>
+      </ul>
+      <p><strong>INCIDENTE DOCUMENTADO:</strong></p>
+      <p>Em 2018, O Colecionador abordou agente especializada em artefatos paranormais, Dra. Lucia Amaral. Ofereceu trocar a vida dela pela informação sobre localização de um artefato específico. Lucia recusou. Dias depois, ela simplesmente desapareceu. Nenhum corpo encontrado. Teoria: Lucia "aceitou" a oferta inconscientemente.</p>
+      <p><strong>NATUREZA FUNDAMENTAL:</strong></p>
+      <p>O Colecionador não parece totalmente físico. Pode desaparecer e reaparecer. Sua mochila-dimensional sugere conhecimento de magia de alto nível. Alguns teóricos acreditam que ele pode ser um ser de outra dimensão que "coleciona" itens de nossa realidade como hobby.</p>
+      <p><strong>ESTRATÉGIA DE CONTENÇÃO:</strong></p>
+      <ul>
+        <li>Não é fisicamente contível (desaparece através de paredes, se necessário)</li>
+        <li>Melhor estratégia: Não tentar combatê-lo diretamente</li>
+        <li>Monitorar artefatos de alto valor e indivíduos paranormalmente significativos</li>
+        <li>Se avistado, reportar localização imediatamente, mas não tentar capturar</li>
+      </ul>
+      <p><strong>AVISO DE SEGURANÇA:</strong> O Colecionador não é inerentemente maligno, apenas incompreensível. Se abordá-lo, nunca rejeite uma oferta de forma impulsiva. Pense nas consequências antes de responder.</p>
+    `
+  },
+  {
+    id: "creature-ecos-temporais",
+    title: "Ecos Temporais",
+    type: "creature" as const,
+    classification: "CLASSE COGNITIVA-TEMPORAL",
+    preview: "Fragmentos de eventos traumáticos passados que se repetem ciclicamente. Causam loop de memória. Podem distorcer percepção de tempo.",
+    content: `
+      <p><strong>DESIGNAÇÃO:</strong> Ecos Temporais (Anomalia-831)</p>
+      <p><strong>NATUREZA:</strong> Não é uma entidade única, mas sim fenômeno temporal causado por trauma psicológico extremo impregnado em um local. Manifesta-se como repetição de evento passado em ciclos.</p>
+      <p><strong>MANIFESTAÇÃO:</strong></p>
+      <ul>
+        <li>O local "revive" um momento do passado repetidamente</li>
+        <li>Ciclo pode durar de minutos a horas</li>
+        <li>Cada repetição é idêntica à anterior</li>
+        <li>Indivíduos presos no local podem se tornar "parte" do eco</li>
+      </ul>
+      <p><strong>CASOS DOCUMENTADOS:</strong></p>
+      <p><strong>Caso 1 - Hospital Abandonado (2017):</strong></p>
+      <p>Hospital onde ocorreu incêndio em 1982, matando 23 pessoas. Investigadores descobriram que o incêndio era "revivido" todo dia às 15:47. Fogo surgia do nada, queimava tudo, desaparecia. Pessoas presas no prédio eram puxadas para o "evento", revivendo a morte uma e outra vez.</p>
+      <p>Solução: Ritual de "repouso" que permitiu às vítimas finalmente passarem. Incêndio cessar.</p>
+      <p><strong>Caso 2 - Ponte (2020):</strong></p>
+      <p>Ponte onde 40 pessoas morreram em acidente de ônibus em 1987. Eco Temporal recriava o acidente a cada 72 horas. Qualquer vivo que cruzasse a ponte era "arrastado" para o loop, revivendo o impacto uma e outra vez.</p>
+      <p>Solução: Demolição da ponte e ritual de dispersão de energias presas.</p>
+      <p><strong>MECANISMO PSICOLÓGICO:</strong></p>
+      <p>Teóricos acreditam que Ecos Temporais são criados quando um evento traumático é tão intenso que "marca" a realidade. O local fica "preso" naquele momento. Às vezes, as vítimas ainda conscientemente "revivem" seus últimos momentos, criando um loop paranormal.</p>
+      <p><strong>EFEITOS EM VIVOS:</strong></p>
+      <ul>
+        <li>Exposição breve: Déjà vu extremo, confusão temporal</li>
+        <li>Exposição moderada: Incorporação ao eco. Vivo é puxado para reviver o evento como "ator"</li>
+        <li>Exposição prolongada: Vivo se torna permanentemente parte do echo. Consciência fica dividida entre "agora" e "então"</li>
+      </ul>
+      <p><strong>SINTOMAS EM VÍTIMAS PRESAS:</strong></p>
+      <ul>
+        <li>Repetição involuntária de ações</li>
+        <li>Incapacidade de falar sobre o evento sem revivê-lo</li>
+        <li>Disassociação grave</li>
+        <li>Em alguns casos: Morte quando loop continua por mais de 30 dias</li>
+      </ul>
+      <p><strong>CONTRAMEDIDAS:</strong></p>
+      <ul>
+        <li>Prevenção: Manter local isolado até que rituais de repouso possam ser realizados</li>
+        <li>Resgate: Agentes devem entrar em grupos, tempo máximo 5 minutos antes de loop reiniciar</li>
+        <li>Cura: Ritual especializado que "libera" consciência presa no evento traumático</li>
+        <li>Purificação: Limpeza energética do local para impedir recorrência</li>
+      </ul>
+      <p><strong>PROFUNDIDADE DO MISTÉRIO:</strong></p>
+      <p>Alguns casos de Ecos Temporais são mais complexos. Há relatos de ecos com "consciência", que parecem aprender entre cada ciclo e adaptam-se. Teoria: O trauma extremo pode gerar forma de entidade que literally "vive" nos momentos repetidos.</p>
+      <p><strong>CONEXÃO COM "PESADELO DE DOIS ANOS ATRÁS":</strong></p>
+      <p>Investigação especula que o Incidente Deus da Morte pode ter criado múltiplos Ecos Temporais em locais específicos. Agentes reportam experiências "de repetição" em certos corredores da instalação subterrânea onde ocorreu o incidente. Protocolo de pesquisa expandido foi iniciado.</p>
+    `
+  },
+
+  // NOVOS ARTEFATOS
+  {
+    id: "artifact-relogio-parado",
+    title: "Relógio de Bolso Parado",
+    type: "artifact" as const,
+    classification: "ARTEFATO TEMPORAL",
+    preview: "Relógio que congela o tempo localizado. Portador e objetos próximos permanecem imóveis enquanto o mundo continua.",
+    content: `
+      <p><strong>ARTEFATO:</strong> Relógio de Bolso Parado</p>
+      <p><strong>DESCRIÇÃO FÍSICA:</strong> Relógio de bolso feito de ouro tarnished com algarismos romanos. Corrente de prata. Mecanismo interno é visível através de vidro de cristal. Sempre marca exatamente 14:47. Peso: 312g.</p>
+      <p><strong>ORIGEM:</strong> Fabricado em 1823 por relojoeiro suíço desconhecido. Primeiras aparições de propriedades paranormais documentadas em 1847. Desapareceu e reapareceu múltiplas vezes ao longo da história.</p>
+      <p><strong>PROPRIEDADES:</strong></p>
+      <ul>
+        <li>Ao abrir a tampa, ativa efeito temporal localizado</li>
+        <li>Tempo é congelado em raio de 10-15 metros ao redor do portador</li>
+        <li>Portador e objetos em sua posse continuam existindo normalmente</li>
+        <li>Mundo externo aparentemente "congelado" em um único momento</li>
+        <li>Duração: Até 23 minutos antes de re-ativar ciclo</li>
+        <li>Após fechamento, tempo retoma normalmente (sem "saltos" aparentes)</li>
+      </ul>
+      <p><strong>EFEITOS COLATERAIS:</strong></p>
+      <ul>
+        <li>Uso repetido causa desassociação do portador (sensação de irrealidade)</li>
+        <li>Exposição prolongada ao tempo congelado causa sensação de "isolamento existencial"</li>
+        <li>Alguns portadores relatam ouvir sussurros do "tempo congelado"</li>
+        <li>Sintomas psicológicos: Depressão, apatia, dificuldade em conectar-se com mundo real</li>
+      </ul>
+      <p><strong>CASO DE USO DOCUMENTADO:</strong></p>
+      <p>Agente especial utilizou o Relógio para congelar tempo durante tentativa de resgate. Conseguiu atravessar zona de combate paranormal ativo sem ser detectado. Operação bem-sucedida, mas agente nunca foi a mesma. Afastado de operações ativas após episódio de desassociação grave.</p>
+      <p><strong>PROTOCOLO ATUAL:</strong></p>
+      <p>Relógio é mantido em cofre especial. Uso autorizado apenas em missões de classe máxima com aprovação do Conselho. Portador deve passar por avaliação psicológica antes e depois de cada uso.</p>
+      <p><strong>LOCALIZAÇÃO ATUAL:</strong> Cofre 3-Alpha, Instalação Central da Ordo</p>
+    `
+  },
+  {
+    id: "artifact-luvas-couro-negro",
+    title: "Luvas de Couro Negro",
+    type: "artifact" as const,
+    classification: "ARTEFATO DE PROTEÇÃO",
+    preview: "Luvas que absorvem magia e energia paranormal. Oferem proteção contra possessão e influência mental. Couro de origem desconhecida.",
+    content: `
+      <p><strong>ARTEFATO:</strong> Luvas de Couro Negro</p>
+      <p><strong>DESCRIÇÃO FÍSICA:</strong> Par de luvas de couro preto, bem ajustadas, tamanho médio-grande. Textura é morna ao toque. Não apresenta sinais de desgaste apesar de aparentar ser extremamente antigas. Costuras com fio dourado formam padrões geométricos nas palmas.</p>
+      <p><strong>COMPOSIÇÃO:</strong> Análise paranormal indica que o couro não provém de animal terrestre conhecido. Possível origem: criatura do Outro Lado.</p>
+      <p><strong>PROPRIEDADES DEFENSIVAS:</strong></p>
+      <ul>
+        <li>Neutraliza magia ofensiva de contato (ataques são absorvidos pelas luvas)</li>
+        <li>Oferece resistência a influência mental (reduz efetividade de manipulação psíquica em 70%)</li>
+        <li>Protege contra possessão paranormal (energia possuidora é repelida)</li>
+        <li>Permite tocar em entidades espectrais sem dano</li>
+        <li>Absorve energia paranormal perigosa, armazenando-a</li>
+      </ul>
+      <p><strong>MECANISMO DE ABSORÇÃO:</strong></p>
+      <p>As Luvas armazenam energia que absorvem. Quando "cheias", começam a esquentar levemente. Se energia não for "descarregada", luvas podem se tornar instáveis e soltar energia bruscamente.</p>
+      <p><strong>LIMITAÇÕES:</strong></p>
+      <ul>
+        <li>Protegem apenas o portador das mãos até cotovelo</li>
+        <li>Não oferecem proteção física convencional</li>
+        <li>Requerem "descarregamento" regular (ritual específico necessário)</li>
+        <li>Pode criar "vazio de energia" se sobrecarregadas</li>
+      </ul>
+      <p><strong>HISTÓRICO DE USO:</strong></p>
+      <p>As Luvas foram utilizadas por múltiplos agentes especializados em combate contra entidades. Taxa de sucesso na contenção aumenta significativamente quando portadas. Nenhum incidente de possessão em portadores confirmado nos últimos 40 anos.</p>
+      <p><strong>MANUTENÇÃO:</strong></p>
+      <ul>
+        <li>Descarregamento obrigatório mensalmente</li>
+        <li>Limpeza com água benta uma vez por semana</li>
+        <li>Armazenamento em local de baixa energia paranormal</li>
+      </ul>
+      <p><strong>LOCALIZAÇÃO ATUAL:</strong> Cofre de Equipamentos 2-B, Quartel-General da Ordo</p>
+    `
+  },
+  {
+    id: "artifact-binoculos-obsidiana",
+    title: "Binóculos de Obsidiana",
+    type: "artifact" as const,
+    classification: "ARTEFATO DE REVELAÇÃO",
+    preview: "Binóculos que revelam verdadeira forma de entidades. Vê através de ilusões e disfarces paranormais. Visão alcança 10km.",
+    content: `
+      <p><strong>ARTEFATO:</strong> Binóculos de Obsidiana</p>
+      <p><strong>DESCRIÇÃO FÍSICA:</strong> Binóculos ornamentados feitos de obsidiana polida. Lentes de vidro negro que parecem absorver luz. Peso: 850g. Quente ao toque. Símbolos antigos gravados na moldura em padrão que parece "se mover" quando observado diretamente.</p>
+      <p><strong>ORIGEM:</strong> Desconhecida. Artefato foi descoberto em escavação arqueológica no México em 1934. Propriedades paranormais identificadas em 1952.</p>
+      <p><strong>PROPRIEDADES PRIMÁRIAS:</strong></p>
+      <ul>
+        <li>Permite visualizar verdadeira forma de entidades paranormais</li>
+        <li>Remove ilusões e disfarces mágicos</li>
+        <li>Alcance visual estendido: até 10 km em linha reta</li>
+        <li>Funciona em qualquer condição de luz (incluindo escuridão total)</li>
+        <li>Visão de espectro ampliado: Pode ver auras energéticas, marcas paranormais</li>
+      </ul>
+      <p><strong>O QUE REVELA:</strong></p>
+      <ul>
+        <li>Entidades disfarçadas de humanas aparecem em verdadeira forma</li>
+        <li>Possessões se tornam visíveis (aura negra ao redor do indivíduo)</li>
+        <li>Artefatos paranormais "brilham" com intensidade relativa ao seu poder</li>
+        <li>Portais entre mundos aparecem como distorções visuais</li>
+        <li>Maldições aparecem como "manchas" ao redor de indivíduos ou objetos</li>
+      </ul>
+      <p><strong>EFEITOS COLATERAIS:</strong></p>
+      <ul>
+        <li>Uso prolongado causa sensação de "impureza visual" mesmo após remover</li>
+        <li>Alguns usuários relatam dificuldade em aceitar aparência humana "normal" depois</li>
+        <li>Pesadelos recorrentes com imagens de entidades vistas</li>
+        <li>Risco de dependência: Usuários querem constantemente "saber a verdade" sobre pessoas</li>
+      </ul>
+      <p><strong>CASOS NOTÁVEIS:</strong></p>
+      <p>Em 2018, agente utilizou Binóculos para detectar 3 agentes infiltrados do Coletivo das Sombras que estavam disfarçados de membros regular da Ordo há 2 anos. Descoberta prevenção de sabotagem de massa.</p>
+      <p><strong>RESTRIÇÕES DE USO:</strong></p>
+      <ul>
+        <li>Máximo 30 minutos contínuos de uso por sessão</li>
+        <li>Deve ter intervalo mínimo de 1 hora entre sessões</li>
+        <li>Uso não autorizado é crime paranormal de classe alta</li>
+        <li>Não deve ser usado para vigilância de agentes da Ordem (viola confidencialidade)</li>
+      </ul>
+      <p><strong>LOCALIZAÇÃO ATUAL:</strong> Cofre 5-Gamma, Departamento de Reconhecimento Paranormal</p>
+    `
+  },
+  {
+    id: "artifact-colar-dentes",
+    title: "Colar de Dentes Humanos",
+    type: "artifact" as const,
+    classification: "ARTEFATO RITUAL",
+    preview: "Colar contendo 13 dentes humanos antigos. Oferece conexão com vítimas passadas. Ritual de localização e comunicação.",
+    content: `
+      <p><strong>ARTEFATO:</strong> Colar de Dentes Humanos</p>
+      <p><strong>DESCRIÇÃO FÍSICA:</strong> Colar feito de cordão de couro envelhecido com 13 dentes humanos presos em suportes de osso trabalhado. Dentes variam em tamanho e cor. Alguns ainda possuem fragmentos de ouro em antigas restaurações dentárias. Comprimento total: 60cm. Peso: 280g.</p>
+      <p><strong>IDADE ESTIMADA:</strong> 200-400 anos. Origem geográfica: Possivelmente Europa Central ou América do Sul.</p>
+      <p><strong>PROPRIEDADES:</strong></p>
+      <ul>
+        <li>Cada dente corresponde a um indivíduo que o possuía originalmente</li>
+        <li>Quando segurado, portador pode "sentir" a presença da pessoa original</li>
+        <li>Com ritual apropriado, permite comunicação com "impressão espiritual" da pessoa</li>
+        <li>Pode ser usado para localizar pessoas desaparecidas (se dente de vítima estiver disponível)</li>
+        <li>Oferece proteção mágica contra aqueles que desejam prejudicar pessoas conectadas aos dentes</li>
+      </ul>
+      <p><strong>RITUAL DE ATIVAÇÃO:</strong></p>
+      <p>Para ativar comunicação, portador deve:</p>
+      <ol>
+        <li>Segurar o dente específico contra a testa</li>
+        <li>Pronunciar nome da pessoa original</li>
+        <li>Enunciar intenção clara de comunicação</li>
+        <li>Aguardar "resposta" (sensações, pensamentos ou vozes)</li>
+      </ol>
+      <p><strong>LIMITAÇÕES CRÍTICAS:</strong></p>
+      <ul>
+        <li>Comunicação é sempre incompleta e fragmentada</li>
+        <li>Pessoa original deve estar morta para o ritual funcionar</li>
+        <li>Se pessoa original estava sofrendo em morte, comunicação pode ser dolorosa/assustadora</li>
+        <li>Dentes de vítimas de morte violenta transmitem emoção traumática</li>
+        <li>Alguns dentes parecem "silenciosos" (pessoa original descansou em paz completamente)</li>
+      </ul>
+      <p><strong>USO INVESTIGATIVO:</strong></p>
+      <p>A Ordem utiliza o colar para investigar mortes paranormais. Comunicação com vítima pode revelar:</p>
+      <ul>
+        <li>Causa verdadeira da morte</li>
+        <li>Identidade de assassino (se paranormal)</li>
+        <li>Localização de evidências</li>
+        <li>Possível localização de entidade responsável</li>
+      </ul>
+      <p><strong>CASO NOTÁVEL:</strong></p>
+      <p>Em 2016, dente de vítima desaparecida foi adicionado ao colar. Comunicação revelou localização de corpo em zona subterrânea. Resgate bem-sucedido de outro desaparecido que ainda estava vivo.</p>
+      <p><strong>AVISO ÉTICO:</strong></p>
+      <p>Uso do colar é invasivo para os mortos. Alguns questionam se repetidamente "acordar" espíritos é ético. Protocolo exige autorização de nível alto antes de ativações.</p>
+      <p><strong>LOCALIZAÇÃO ATUAL:</strong> Cofre 7-Delta, Departamento de Investigações Paranormais Especiais</p>
+    `
+  },
+  {
+    id: "artifact-faca-ritual",
+    title: "Faca Ritual de Prata",
+    type: "artifact" as const,
+    classification: "ARTEFATO DE BANIMENTO",
+    preview: "Faca de prata pura com gravações runescas. Corta através de barreiras paranormais. Capaz de ferir entidades imateriais.",
+    content: `
+      <p><strong>ARTEFATO:</strong> Faca Ritual de Prata</p>
+      <p><strong>DESCRIÇÃO FÍSICA:</strong> Faca de aproximadamente 30cm de comprimento, lâmina feita de prata pura. Lâmina brilha com luz interna levemente azulada. Cabo feito de osso entalhado com runas em idioma desconhecido. Peso: 420g. Temperatura é sempre 5-10°C mais fria que ambiente.</p>
+      <p><strong>PROPRIEDADES OFENSIVAS:</strong></p>
+      <ul>
+        <li>Lâmina corta através de barreiras mágicas</li>
+        <li>Capaz de ferir entidades imateriais ou espectrais</li>
+        <li>Contra entidades de Classe-B a Classe-D é extremamente efetiva</li>
+        <li>Contra entidades de Classe-X é menos efetiva (requer múltiplos ferimentos)</li>
+        <li>Ferimentos infligidos pela faca não cicatrizam normalmente em entidades paranormais</li>
+      </ul>
+      <p><strong>PROPRIEDADES RITUAIS:</strong></p>
+      <ul>
+        <li>Pode ser usada para desenhar sigils de banimento em superfícies</li>
+        <li>Sangue de entidade paranormal morta pela faca é potente componente para rituais</li>
+        <li>Faca pode "absorver" maldições cortando-as (processo ritual)</li>
+        <li>Quebra laços telepáticos se utilizada em ritual específico</li>
+      </ul>
+      <p><strong>LIMITAÇÕES:</strong></p>
+      <ul>
+        <li>Apenas efetiva em mãos de indivíduo com treinamento paranormal</li>
+        <li>Faca "rejeita" tentativas de uso contra inocentes (fica pesada, difícil de controlar)</li>
+        <li>Requer "recarga" espiritual a cada 7 usos (imersão em água benta por uma noite)</li>
+        <li>Não oferece proteção contra contraataques paranormais</li>
+      </ul>
+      <p><strong>HISTÓRICO DE COMBAT:</strong></p>
+      <p>Faca foi utilizada em:</p>
+      <ul>
+        <li>1995 - Banimento de Entidade de Classe-C (bem-sucedido)</li>
+        <li>2008 - Ferimento crítico em Entidade de Classe-D (entidade posteriormente contida)</li>
+        <li>2019 - Corte de laço de possessão em agente comprometido (sucesso parcial)</li>
+        <li>2023 - Múltiplos ferimentos em Copiador (entidade se regenerou)</li>
+      </ul>
+      <p><strong>MANUTENÇÃO CRÍTICA:</strong></p>
+      <ul>
+        <li>Nunca deve ser usada para cortar materiais mundanos</li>
+        <li>Deve ser mantida enfiada em bainha de couro especial</li>
+        <li>Semanal: Limpeza com pano de seda branca</li>
+        <li>Mensal: Imersão em água benta</li>
+        <li>Anual: Ritual de "reconsagração" por especialista paranormal</li>
+      </ul>
+      <p><strong>LOCALIZAÇÃO ATUAL:</strong> Cofre 2-Alpha, Armaria de Artefatos Paranormais</p>
+      <p><strong>ACESSO:</strong> Apenas para agentes de combate paranormal Classe-1 ou superior com autorização do Conselho.</p>
+    `
+  },
+
+  // RITUAIS DOCUMENTADOS
+  {
+    id: "ritual-banimento-entidades",
+    title: "Ritual de Banimento Simples de Entidades",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Protocolo básico para banir entidades de Classe-A e B. Requer conhecimento de simbologia paranormal.",
+    content: `
+      <p><strong>RITUAL:</strong> Banimento Simples de Entidades</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Nível Alfa - Operadores de Campo podem executar com supervisão</p>
+      <p><strong>EFETIVIDADE:</strong> 85% contra entidades Classe-A | 60% contra entidades Classe-B</p>
+      <p><strong>DURAÇÃO:</strong> 15-30 minutos</p>
+      
+      <p><strong>MATERIAIS NECESSÁRIOS:</strong></p>
+      <ul>
+        <li>Sal consagrado (mínimo 5kg)</li>
+        <li>Ferro frio em pó (mínimo 2kg)</li>
+        <li>Água benta (mínimo 1 litro)</li>
+        <li>Vela branca ou vermelha</li>
+        <li>Símbolos paranormais (desenhados ou impressos)</li>
+        <li>Artefato pessoal da entidade (se disponível)</li>
+      </ul>
+      
+      <p><strong>PROCEDIMENTO:</strong></p>
+      <ol>
+        <li><strong>Proteção do Operador:</strong> Vestir talisman de proteção. Desenhar círculo de sal ao redor da área</li>
+        <li><strong>Invocação:</strong> Pronunciar nome da entidade (se conhecido). Se desconhecido, describir características</li>
+        <li><strong>Designação de Limites:</strong> Traçar linha de ferro frio entre operador e entidade. Entidade não pode cruzar</li>
+        <li><strong>Enfraquecimento:</strong> Aspergir água benta enquanto pronuncia palavras de banimento</li>
+        <li><strong>Simbologia:</strong> Desenhar símbolo de banimento (Espiral Devoradora revertida é comum)</li>
+        <li><strong>Finalização:</strong> Acender vela. Se vela queimar normalmente, banimento sucedeu</li>
+      </ol>
+      
+      <p><strong>PALAVRAS DE BANIMENTO (Em latim antigo):</strong></p>
+      <p style="font-style: italic; background: rgba(59, 130, 246, 0.1); padding: 10px; font-family: monospace;">
+        "Relinquo te, spiritus nocens. Per salam, per ferrum, per aquam sanctam. Redi ad tenebris unde venisti."
+      </p>
+      <p><strong>(Aproximadamente traduzido: "Deixo você, espírito nocivo. Pelo sal, pelo ferro, pela água sagrada. Retorne às trevas de onde veio.")</strong></p>
+      
+      <p><strong>SINAIS DE SUCESSO:</strong></p>
+      <ul>
+        <li>Temperatura local aumenta bruscamente</li>
+        <li>Entidade emite som (grito, sussurro ou uivo)</li>
+        <li>Objetos caem ou movimento se torna errático</li>
+        <li>Entidade desaparece ou se move para canto oposto</li>
+        <li>Vela queima com chama estável azulada</li>
+      </ul>
+      
+      <p><strong>SINAIS DE FALHA:</strong></p>
+      <ul>
+        <li>Vela se apaga ou queima vermelha intensa</li>
+        <li>Entidade avança contra barreira de ferro</li>
+        <li>Operador começa a sentir pressão mental ou dor</li>
+        <li>Sal ou água benta não afetam a entidade</li>
+      </ul>
+      
+      <p><strong>SE FALHAR:</strong></p>
+      <p>Evacuar imediatamente. Ativar Protocolo Alfa-9 para contenção. Não tentar novamente sem especialista.</p>
+      
+      <p><strong>VARIAÇÕES PARA ENTIDADES ESPECÍFICAS:</strong></p>
+      <ul>
+        <li><strong>Espectrais:</strong> Aumentar quantidade de ferro. Entidades de energia preferem sair</li>
+        <li><strong>Telepáticas:</strong> Usar símbolos adicionais. Entoar mantras enquanto realiza ritual</li>
+        <li><strong>Vinculadas a Artefatos:</strong> Destruir ou isolar artefato durante ritual</li>
+        <li><strong>Demoníacas (suspeita):</strong> Chamar especialista. Ritual padrão não é suficiente</li>
+      </ul>
+      
+      <p><strong>NOTA IMPORTANTE:</strong></p>
+      <p>Banimento simples não "mata" entidades. Apenas as força a sair do plano físico. Entidades podem retornar. Para banimento permanente, rituais mais complexos são necessários.</p>
+      
+      <p><strong>AUTORIA:</strong> Compilado por Santer com ajuda de especialistas em paranormalidade</p>
+    `
+  },
+  {
+    id: "ritual-protecao-mental",
+    title: "Ritual de Proteção Mental Contra Invasão Psíquica",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Ritual defensivo que escuda mente contra manipulação telepática, possessão e leitura de pensamentos.",
+    content: `
+      <p><strong>RITUAL:</strong> Proteção Mental Contra Invasão Psíquica</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Nível Alfa - Recomendado antes de operações contra entidades cognitivas</p>
+      <p><strong>EFETIVIDADE:</strong> 75% contra telepatas e possuidores</p>
+      <p><strong>DURAÇÃO DO EFEITO:</strong> 4-8 horas dependendo do ritual</p>
+      
+      <p><strong>MÉTODO 1 - PROTEÇÃO RÁPIDA (5 minutos):</strong></p>
+      <ol>
+        <li>Tomar posição fixa. Pés separados na largura dos ombros</li>
+        <li>Imaginar luz branca/azul cercando o corpo</li>
+        <li>Pronunciar internamente: "Minha mente é minha. Ninguém entra sem permissão"</li>
+        <li>Visualizar "porta" de luz bloqueando entrada mental</li>
+        <li>Respeitar qualquer pressão mental como tentativa de invasão</li>
+      </ol>
+      
+      <p><strong>MÉTODO 2 - PROTEÇÃO RITUALÍSTICA (30 minutos):</strong></p>
+      <p><strong>Materiais:</strong></p>
+      <ul>
+        <li>Incenso (alecrim ou sálvia)</li>
+        <li>Cristal de ametista ou turmalina negra</li>
+        <li>Água com sal marinho</li>
+        <li>Vela roxa ou preta</li>
+      </ul>
+      
+      <p><strong>Procedimento:</strong></p>
+      <ol>
+        <li>Acender incenso. Deixar fumaça cercear o corpo 3 vezes (shielding com fumaça)</li>
+        <li>Segurar cristal contra testa (terceiro olho)</li>
+        <li>Visualizar "labirinto mental" - entidade que tentar invadir se perde</li>
+        <li>Aspergir água com sal ao redor enquanto entoar: "Labirinto de proteção, rejeição paranormal"</li>
+        <li>Acender vela. Se queimar com cor roxa/azul, proteção foi estabelecida</li>
+        <li>Carregar cristal durante operação</li>
+      </ol>
+      
+      <p><strong>MÉTODO 3 - PROTEÇÃO PROFUNDA (60 minutos, para confrontação direta):</strong></p>
+      <p>Requer especialista. Envolve ritual de "ocupação mental" - preencher consciosamente cada "cantonada" da mente com pensamentos/barreiras.</p>
+      
+      <p><strong>SINAIS DE QUE PROTEÇÃO ESTÁ FUNCIONANDO:</strong></p>
+      <ul>
+        <li>Sensação de "pressão" contra escudo quando entidade tenta invadir</li>
+        <li>Dores de cabeça suaves são normais (significa bloqueio está ativo)</li>
+        <li>Entidade pode "gritar" mentalmente contra proteção</li>
+      </ul>
+      
+      <p><strong>SINAIS DE FALHA:</strong></p>
+      <ul>
+        <li>Invasão súbita de pensamentos alheios</li>
+        <li>Perda de memória de curto prazo</li>
+        <li>Dor de cabeça severa ou náusea</li>
+        <li>Sensação de "outro" dentro da mente</li>
+      </ul>
+      
+      <p><strong>SE POSSESSÃO COMEÇAR:</strong></p>
+      <p>Gritar mental ou verbalmente "NÃO". Lutar contra invasor. Ativar protocolo de ajuda imediata. Não deixar entidade estabelecer domínio.</p>
+      
+      <p><strong>NOTA:</strong> Proteção mental é cansativa. Usar apenas quando necessário. Proteção contínua pode causar disassociação.</p>
+    `
+  },
+  {
+    id: "ritual-limpeza-contaminacao",
+    title: "Ritual de Limpeza de Contaminação Paranormal",
+    type: "protocol" as const,
+    classification: "NIVEL ALFA",
+    preview: "Purificação de pessoas ou locais expostos a contaminação paranormal. Remove maldições menores e influências residuais.",
+    content: `
+      <p><strong>RITUAL:</strong> Limpeza de Contaminação Paranormal</p>
+      <p><strong>CLASSIFICAÇÃO:</strong> Nível Alfa - Qualquer agente treinado pode executar</p>
+      <p><strong>EFETIVIDADE:</strong> 90% contra contaminação leve | 60% contra moderada</p>
+      <p><strong>DURAÇÃO:</strong> 20-45 minutos</p>
+      
+      <p><strong>QUANDO USAR:</strong></p>
+      <ul>
+        <li>Após exposição a Névoa Cinzenta ou anomalias gasosas</li>
+        <li>Após contato com objetos possuídos</li>
+        <li>Antes de entrar em área de alta energia paranormal</li>
+        <li>Após fuga de possessão ou controle mental</li>
+        <li>Para "limpar" artefatos antes de armazenamento</li>
+      </ul>
+      
+      <p><strong>PARA PESSOAS:</strong></p>
+      <p><strong>Materiais:</strong></p>
+      <ul>
+        <li>Água benta (quantidade suficiente para ablução)</li>
+        <li>Sal consagrado</li>
+        <li>Incenso (alecrim, cedro ou sálvia)</li>
+        <li>Vela branca</li>
+      </ul>
+      
+      <p><strong>Procedimento:</strong></p>
+      <ol>
+        <li><strong>Ablução:</strong> Lavar mãos, face e pescoço com água benta enquanto pronuncia intenção de purificação</li>
+        <li><strong>Sal:</strong> Esfregar sal levemente na pele (especialmente em volta de olhos, ouvidos, boca) - abertas do corpo</li>
+        <li><strong>Fumigação:</strong> Deixar incenso cercar o corpo. Visualizar fumaça carregando contaminação para longe</li>
+        <li><strong>Confirmação:</strong> Acender vela branca. Observar se queima normalmente (purificação bem-sucedida)</li>
+        <li><strong>Repouso:</strong> Descansar 10 minutos em silêncio</li>
+      </ol>
+      
+      <p><strong>PARA LOCAIS/OBJETOS:</strong></p>
+      <p><strong>Procedimento Estendido:</strong></p>
+      <ol>
+        <li>Traçar círculo de sal ao redor do objeto ou perímetro do local</li>
+        <li>Acender velas brancas nos pontos cardinais</li>
+        <li>Aspergir água benta sobre o objeto enquanto pronuncia: "Purificação paranormal. Retorno ao estado natural"</li>
+        <li>Queimar incenso ao redor por 15 minutos</li>
+        <li>Se local, caminhar em padrão em espiral do exterior para o centro</li>
+        <li>Se objeto, envolver em pano branco após conclusão</li>
+      </ol>
+      
+      <p><strong>SINAIS DE SUCESSO:</strong></p>
+      <ul>
+        <li>Velas queimarem com chama azul clara</li>
+        <li>Sensação de alívio ou frescor</li>
+        <li>Dissipação de odor paranormal (se presente)</li>
+        <li>Temperatura local normalizar</li>
+      </ul>
+      
+      <p><strong>SINAIS DE FALHA/CONTAMINAÇÃO SEVERA:</strong></p>
+      <ul>
+        <li>Velas se apagarem repetidamente</li>
+        <li>Queimadura de pele após contato com água benta (indica presença demoníaca)</li>
+        <li>Agravamento de sintomas após ritual</li>
+      </ul>
+      
+      <p><strong>SE CONTAMINAÇÃO FOR SEVERA:</strong></p>
+      <p>Parar ritual imediatamente. Chamar especialista. Possível necessidade de contenção ou isolamento.</p>
+      
+      <p><strong>VARIAÇÃO - LIMPEZA PROFUNDA:</strong></p>
+      <p>Para contaminação extrema, pode ser necessário destruir o objeto ou quarentena 40 dias do local.</p>
+    `
+  },
 ];
+

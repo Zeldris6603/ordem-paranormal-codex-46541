@@ -46,23 +46,31 @@ const Index = () => {
 
   useEffect(() => {
     const observers = sectionsRef.current.map((section, index) => {
+      if (!section) return null;
+      
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add("animate-fade-in");
+              // Remove opacity and apply fade-in animation
+              entry.target.classList.remove("opacity-0");
+              entry.target.classList.add("opacity-1", "animate-fade-in");
+              // Stop observing after animation
+              observer.unobserve(entry.target);
             }
           });
         },
         { threshold: 0.1 }
       );
 
-      if (section) observer.observe(section);
+      observer.observe(section);
       return observer;
-    });
+    }).filter(obs => obs !== null);
 
     return () => {
-      observers.forEach((observer) => observer.disconnect());
+      observers.forEach((observer) => {
+        if (observer) observer.disconnect();
+      });
     };
   }, []);
 
